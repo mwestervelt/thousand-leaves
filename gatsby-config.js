@@ -1,11 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Intl`,
-    description: `Kick off your next, great Gatsby project with this i18n starter. This barebones starter ships with the main Gatsby configuration files you might need... and i18n too!`,
-    author: `@gatsbyjs, @tomekskuta`,
+    title: `Mil Folhas`,
+    description: `The Mil Folhas Project`,
+    author: `mariel westervelt`,
     keywords: [`gatsby`, `application`, `react`],
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        includePaths: [`${__dirname}/node_modules`, `${__dirname}/src/`],
+        precision: 8
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,33 +1,34 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-
+import { Jumbotron } from 'reactstrap'
 import withLayout from '../layout';
 import Link from '../components/Link';
-import Image from '../components/Image';
+// import Image from '../components/Image';
+// import { Helmet } from "react-helmet"
+// import vista1 from '../images/vista1996.jpg'
+// import vista2 from '../images/vista2019.jpg'
+
+
 
 const IndexPage = () => (
   <>
-    <h1>
+    <h3>
       <FormattedMessage id="home.Hi people" />
-    </h1>
-    <p>
-      <FormattedMessage id="home.Welcome to your new Gatsby site" />
-    </p>
-    <p>
-      <FormattedMessage id="home.Now go build something great" />
-    </p>
-    <p>
-      <a
-        href="https://github.com/tomekskuta/gatsby-starter-intl"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <FormattedMessage id="home.or learn more" />
-      </a>
-    </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    </h3>
+    <Jumbotron >
+        {/* <React.Fragment>
+           <Helmet>
+        <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+
+      </Helmet>
+          <div className="juxtapose">
+            <img alt="2019 vista" src={vista1} />
+            <img alt="1996 vista" src={vista2} />
+          </div>
+        </React.Fragment> */}
+          <iframe title="slider" frameborder="0" className="juxtapose" width="100%" height="1711" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=591043f4-019e-11ea-b9b8-0edaf8f81e27"></iframe>
+      </Jumbotron>
+ 
     <Link to="/page-2/">
       <FormattedMessage id="home.Go to page 2" />
     </Link>

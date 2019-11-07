@@ -2,38 +2,41 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from '../Link';
 import Langs from '../Langs';
+import { Container } from 'reactstrap'
+import logo from "../../images/logo.png" // Tell Webpack this JS file uses this image
 
 const Header = ({ siteTitle, hideLangs }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: 'flex',
-        justifyContent: 'space-between',
-        flexWrap: 'wrap',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      {!hideLangs && <Langs />}
-    </div>
-  </header>
+   
+<>
+   <div className='navbar navbar-expand-lg navbar-light bg-light'>
+   <Container>
+     <ul className='nav navbar-nav mx-auto'>
+       <li className='nav-item'>
+         <Link to='/about' className='nav-link'>The Project</Link>
+       </li>
+       <li className='nav-item'>
+         <Link to='/reforestation' className='nav-link'>Reforestation</Link>
+       </li>
+       <li className='nav-item'>
+         <Link to='/zecar' className='nav-link'>Zécar</Link>
+       </li>
+       <li className='nav-item'>
+         <Link to='/atlantic-forest' className='nav-link'>Atlantic Forest</Link>
+       </li> 
+       <li className='nav-item'>
+         <Link to='/contact' className='nav-link'>Contact</Link>
+       </li>
+     </ul>
+     {!hideLangs && <Langs />}
+   </Container>
+  
+ </div>
+ <div className='navbar navbar-expand-lg navbar-light bg-light'>
+ <Link to='/' className='navbar-brand mx-auto'><img className="logo" src={logo} alt="logo"></img></Link>
+
+
+   </div>
+   </>
 );
 
 Header.propTypes = {

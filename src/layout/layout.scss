@@ -1,0 +1,436 @@
+// Your variable overrides can go here, e.g.:
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap');
+
+
+
+// Bootstrap 4 & Bootswatch Cosmo theme
+// Feel free to comment out anything you're not using
+
+//// bootswatch theme overrides
+// @import "bootswatch/dist/cerulean/variables";
+@import "bootswatch/dist/cosmo/variables";
+// @import "bootswatch/dist/cyborg/variables";
+// @import "bootswatch/dist/darkly/variables";
+// @import "bootswatch/dist/flatly/variables";
+// @import "bootswatch/dist/journal/variables";
+// @import "bootswatch/dist/litera/variables";
+// @import "bootswatch/dist/lumen/variables";
+// @import "bootswatch/dist/lux/variables";
+// @import "bootswatch/dist/materia/variables";
+// @import "bootswatch/dist/minty/variables";
+// @import "bootswatch/dist/pulse/variables";
+// @import "bootswatch/dist/sandstone/variables";
+// @import "bootswatch/dist/simplex/variables";
+// @import "bootswatch/dist/sketchy/variables";
+// @import "bootswatch/dist/slate/variables";
+// @import "bootswatch/dist/solar/variables";
+// @import "bootswatch/dist/spacelab/variables";
+// @import "bootswatch/dist/superhero/variables";
+// @import "bootswatch/dist/united/variables";
+// @import "bootswatch/dist/yeti/variables";
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/print";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/code";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/input-group";
+// @import "bootstrap/scss/custom-forms";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+@import "bootstrap/scss/badge";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/utilities";
+
+
+//// bootswatch theme overrides
+// @import "bootswatch/dist/cerulean/bootswatch";
+@import "bootswatch/dist/cosmo/bootswatch";
+// @import "bootswatch/dist/cyborg/bootswatch";
+// @import "bootswatch/dist/darkly/bootswatch";
+// @import "bootswatch/dist/flatly/bootswatch";
+// @import "bootswatch/dist/journal/bootswatch";
+// @import "bootswatch/dist/litera/bootswatch";
+// @import "bootswatch/dist/lumen/bootswatch";
+// @import "bootswatch/dist/lux/bootswatch";
+// @import "bootswatch/dist/materia/bootswatch";
+// @import "bootswatch/dist/minty/bootswatch";
+// @import "bootswatch/dist/pulse/bootswatch";
+// @import "bootswatch/dist/sandstone/bootswatch";
+// @import "bootswatch/dist/simplex/bootswatch";
+// @import "bootswatch/dist/sketchy/bootswatch";
+// @import "bootswatch/dist/slate/bootswatch";
+// @import "bootswatch/dist/solar/bootswatch";
+// @import "bootswatch/dist/spacelab/bootswatch";
+// @import "bootswatch/dist/superhero/bootswatch";
+// @import "bootswatch/dist/united/bootswatch";
+// @import "bootswatch/dist/yeti/bootswatch";
+
+
+// page-level layout
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  & > .pageContent {
+    flex: 1;
+    overflow: auto;
+    padding-top: 10px;
+  }
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar-nav {
+  flex-direction: row!important;
+
+  & > * {
+    padding-left: 10px; 
+  }
+}
+
+a.nav-link {
+  color: #006B3A !important;
+}
+
+.btn-success {
+	background-color: #006B3A !important;
+	border-color: #006B3A!important;
+}
+
+a.nav-link:hover {
+  font-weight: 600!important;
+}
+
+.vista{
+  color: F8F9FA!important;
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  // width: 100vh;
+}
+
+.logo{
+  max-width: 10em;
+}
+
+
+
+//////////////////////////////////////////////////////////////////////// juxtapose 
+
+ div.juxtapose {
+	width: 100%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+div.jx-slider {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	color: #f3f3f3;
+}
+
+
+div.jx-handle {
+	position: absolute;
+	height: 100%;
+	width: 40px;
+	cursor: col-resize;
+	z-index: 15;
+	margin-left: -20px;
+}
+
+.vertical div.jx-handle {
+	height: 40px;
+	width: 100%;
+	cursor: row-resize;
+	margin-top: -20px;
+	margin-left: 0;
+}
+
+div.jx-control {
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 3px;
+	background-color: currentColor;
+}
+
+.vertical div.jx-control {
+	height: 3px;
+	width: 100%;
+	background-color: currentColor;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+div.jx-controller {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	height: 60px;
+	width: 9px;
+	margin-left: -3px;
+	background-color: currentColor;
+}
+
+.vertical div.jx-controller {
+	height: 9px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	top: -3px;
+	position: relative;
+}
+
+div.jx-arrow {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	transition: all .2s ease;
+}
+
+.vertical div.jx-arrow {
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	transition: all .2s ease;
+}
+
+
+div.jx-arrow.jx-left {
+	left: 2px;
+	border-style: solid;
+	border-width: 8px 8px 8px 0;
+	border-color: transparent currentColor transparent transparent;
+}
+
+div.jx-arrow.jx-right {
+	right: 2px;
+	border-style: solid;
+	border-width: 8px 0 8px 8px;
+	border-color: transparent transparent transparent currentColor;
+}
+
+.vertical div.jx-arrow.jx-left {
+	left: 0px;
+	top: 2px;
+	border-style: solid;
+	border-width: 0px 8px 8px 8px;
+	border-color: transparent transparent currentColor transparent;
+}
+
+.vertical div.jx-arrow.jx-right {
+	right: 0px;
+	top: auto;
+	bottom: 2px;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: currentColor transparent transparent transparent;
+}
+
+div.jx-handle:hover div.jx-arrow.jx-left,
+div.jx-handle:active div.jx-arrow.jx-left {
+	left: -1px;
+}
+
+div.jx-handle:hover div.jx-arrow.jx-right,
+div.jx-handle:active div.jx-arrow.jx-right {
+	right: -1px;
+}
+
+.vertical div.jx-handle:hover div.jx-arrow.jx-left,
+.vertical div.jx-handle:active div.jx-arrow.jx-left {
+	left: 0px;
+	top: 0px;
+}
+
+.vertical div.jx-handle:hover div.jx-arrow.jx-right,
+.vertical div.jx-handle:active div.jx-arrow.jx-right {
+	right: 0px;
+	bottom: 0px;
+}
+
+
+div.jx-image {
+	position: absolute;
+	height: 100%;
+	display: inline-block;
+	top: 0;
+	overflow: hidden;
+	// -webkit-backface-visibility: hidden;
+}
+
+.vertical div.jx-image {
+	width: 100%;
+	left: 0;
+	top: auto;
+}
+
+div.jx-image img {
+	height: 100%;
+	width: auto;
+	z-index: 5;
+	position: absolute;
+	margin-bottom: 0;
+
+	max-height: none;
+	max-width: none;
+	max-height: initial;
+	max-width: initial;
+}
+
+.vertical div.jx-image img {
+	height: auto;
+	width: 100%;
+}
+
+div.jx-image.jx-left {
+	left: 0;
+	background-position: left;
+}
+
+div.jx-image.jx-left img {
+	left: 0;
+}
+
+div.jx-image.jx-right {
+	right: 0;
+	background-position: right;
+}
+
+div.jx-image.jx-right img {
+	right: 0;
+	bottom: 0;
+}
+
+
+.veritcal div.jx-image.jx-left {
+	top: 0;
+	background-position: top;
+}
+
+.veritcal div.jx-image.jx-left img {
+	top: 0;
+}
+
+.vertical div.jx-image.jx-right {
+	bottom: 0;
+	background-position: bottom;
+}
+
+.veritcal div.jx-image.jx-right img {
+	bottom: 0;
+}
+
+
+div.jx-image div.jx-label {
+	font-size: 1em;
+	padding: .25em .75em;
+	position: relative;
+	display: inline-block;
+	top: 0;
+	background-color: #000; /* IE 8 */
+	background-color: rgba(0,0,0,.7);
+	color: white;
+	z-index: 10;
+	white-space: nowrap;
+	line-height: 18px;
+	vertical-align: middle;
+}
+
+div.jx-image.jx-left div.jx-label {
+	float: left;
+	left: 0;
+}
+
+div.jx-image.jx-right div.jx-label {
+	float: right;
+	right: 0;
+}
+
+.vertical div.jx-image div.jx-label {
+	display: table;
+	position: absolute;
+}
+
+.vertical div.jx-image.jx-right div.jx-label {
+	left: 0;
+	bottom: 0;
+	top: auto;
+}
+
+div.jx-credit {
+	line-height: 1.1;
+	font-size: 0.75em;
+}
+
+div.jx-credit em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/* Animation */
+
+div.jx-image.transition {
+	transition: width .5s ease;
+}
+
+div.jx-handle.transition {
+	transition: left .5s ease;
+}
+
+.vertical div.jx-image.transition {
+	transition: height .5s ease;
+}
+
+.vertical div.jx-handle.transition {
+	transition: top .5s ease;
+}
+
+
+/* keyboard accessibility */
+div.jx-controller:focus,
+div.jx-image.jx-left div.jx-label:focus,
+div.jx-image.jx-right div.jx-label:focus,
+a.jx-knightlab:focus {
+	background: #eae34a;
+	color: #000;
+}

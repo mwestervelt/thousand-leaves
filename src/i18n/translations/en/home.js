@@ -1,6 +1,6 @@
 export default {
   title: 'Home',
-  'Hi people': 'Hi people',
+  'Hi people': 'English home page content',
   'Welcome to your new Gatsby site': 'Welcome to your new Gatsby site.',
   'Now go build something great': 'Now go build something great.',
   'or learn more': '...or learn more.',
