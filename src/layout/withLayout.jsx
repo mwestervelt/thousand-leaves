@@ -38,11 +38,12 @@ const withLayout = customProps => PageComponent => props => {
       `}
       render={data => (
         <IntlProvider locale={pageLocale} messages={translations[pageLocale]}>
+          <div className="App">
           <PageContext.Provider value={pageContextValue}>
             <SEO title={pageTitle} lang={pageLocale} />
-            <Header siteTitle={data.site.siteMetadata.title} hideLangs={hideLangs} />
+            <Header  siteTitle={data.site.siteMetadata.title} hideLangs={hideLangs} />
       
-              <main>
+              <main >
                 <PageComponent {...props} />
               </main>
               <footer>
@@ -50,6 +51,7 @@ const withLayout = customProps => PageComponent => props => {
               </footer>
             
           </PageContext.Provider>
+          </div>
         </IntlProvider>
       )}
     />

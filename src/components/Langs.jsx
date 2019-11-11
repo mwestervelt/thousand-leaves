@@ -9,14 +9,14 @@ const buttonStyle = {
   margin: '0.5rem',
   borderRadius: '10px',
   border: 0,
-  cursor: 'pointer',
+  cursor: 'pointer'
 };
 
 const LangButton = ({ label, chosen, onClick }) => (
   <button
     onClick={onClick}
     style={{
-      background: chosen ? '#FFAF1E' : 'white',
+      background: chosen ? '#006B3A' : 'white', color: chosen ? 'white' : '#373a3c',
       ...buttonStyle,
     }}
   >

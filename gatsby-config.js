@@ -3,7 +3,7 @@ module.exports = {
     title: `Mil Folhas`,
     description: `The Mil Folhas Project`,
     author: `mariel westervelt`,
-    keywords: [`gatsby`, `application`, `react`],
+    keywords: [`mil folhas`, `reforestation`, `chico`, `bicalho`, `thousand leaves`],
   },
   plugins: [
     {
