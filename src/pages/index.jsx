@@ -13,7 +13,7 @@ import vista2 from '../images/vista2019.jpg'
 const IndexPage = () => (
   <>
     <h3>
-      <FormattedMessage id="home.placeholder" />
+      {/* <FormattedMessage id="home.placeholder" /> */}
     </h3>
     <Jumbotron >
         <>
