@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { IntlProvider, addLocaleData } from 'react-intl';
+import { Helmet } from "react-helmet"
 
 import PageContext from './PageContext';
 
@@ -47,7 +48,7 @@ const withLayout = customProps => PageComponent => props => {
                 <PageComponent {...props} />
               </main>
               <footer>
-               
+    
               </footer>
             
           </PageContext.Provider>

@@ -1,52 +1,120 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useEffect } from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Jumbotron } from 'reactstrap'
+import { Jumbotron, Container } from 'reactstrap'
 import withLayout from '../layout';
 // import Link from '../components/Link';
 // import Image from '../components/Image';
-import { Helmet } from "react-helmet"
 import vista1 from '../images/vista1996.jpg'
 import vista2 from '../images/vista2019.jpg'
 
+
+function initComparisons() {
+  var x, i;
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked === 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+
 const IndexPage = () => {
 
-  // const [count, setCount] = useState(0);
   useEffect(() => {
-    document.title = `You clicked $ times`;
-        var slider = document.querySelector(".juxtapose");
-        console.log(slider)
+    initComparisons();
+    // need to figure out how to keep slider position after changing languages
+    // var slider = document.querySelector(".juxtapose");
+    // console.log(slider)
   });
 
-
-return (
-  <>
-    <h3>
-    </h3>
-    <Jumbotron >
-
-      {/* <Container>
-    <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-      </Container> */}
-
-        <>
-           <Helmet>
-        <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
-      </Helmet>
-          <div width="100%" height="1711" className="juxtapose">
+  return (
+    <>
+      <Jumbotron fluid >
+        <Container fluid className="d-flex justify-content-center align-items-center">
+        <div className="img-comp-container">
+          <div class="img-comp-img">
+            <img alt="2019 vista" src={vista1} height="700" width="1200"/>
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img alt="1996 vista" src={vista2} height="700" width="1200" />
+          </div>
+        </div>
+        </Container>
+        {/* <div id="juxtapose-wrapper" className="juxtapose">
             <img alt="2019 vista" src={vista1} />
             <img alt="1996 vista" src={vista2} />
-          </div>
-        </>
-          {/* <iframe title="slider" frameborder="0" className="juxtapose" width="100%" height="1711" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=591043f4-019e-11ea-b9b8-0edaf8f81e27"></iframe> */}
+          </div> */}
       </Jumbotron>
-  </>
-)};
+    </>
+  )
+};
 
 const customProps = {
-  localeKey: 'home', // same as file name in src/i18n/translations/your-lang/index.js
+  localeKey: 'home',
 };
 
 export default withLayout(customProps)(IndexPage);

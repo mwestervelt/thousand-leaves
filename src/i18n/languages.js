@@ -1,8 +1,7 @@
 module.exports = [
   {
     locale: 'pt',
-    label: 'Português',
-    default: false
+    label: 'Português'
   },
   {
     locale: 'en',
