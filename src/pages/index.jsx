@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Jumbotron } from 'reactstrap'
 import withLayout from '../layout';
@@ -8,18 +8,32 @@ import { Helmet } from "react-helmet"
 import vista1 from '../images/vista1996.jpg'
 import vista2 from '../images/vista2019.jpg'
 
+const IndexPage = () => {
+
+  // const [count, setCount] = useState(0);
+  useEffect(() => {
+    document.title = `You clicked $ times`;
+        var slider = document.querySelector(".juxtapose");
+        console.log(slider)
+  });
 
 
-const IndexPage = () => (
+return (
   <>
     <h3>
-      {/* <FormattedMessage id="home.placeholder" /> */}
     </h3>
     <Jumbotron >
+
+      {/* <Container>
+    <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+      </Container> */}
+
         <>
            <Helmet>
         <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
-
       </Helmet>
           <div width="100%" height="1711" className="juxtapose">
             <img alt="2019 vista" src={vista1} />
@@ -28,12 +42,8 @@ const IndexPage = () => (
         </>
           {/* <iframe title="slider" frameborder="0" className="juxtapose" width="100%" height="1711" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=591043f4-019e-11ea-b9b8-0edaf8f81e27"></iframe> */}
       </Jumbotron>
- 
-    {/* <Link to="/page-2/">
-      <FormattedMessage id="home.Go to page 2" />
-    </Link> */}
   </>
-);
+)};
 
 const customProps = {
   localeKey: 'home', // same as file name in src/i18n/translations/your-lang/index.js

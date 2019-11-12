@@ -24,6 +24,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        mergeLinkHeaders: false,
+        mergeCachingHeaders: false
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
