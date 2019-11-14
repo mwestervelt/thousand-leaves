@@ -17,7 +17,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap'
-import logo from "../../images/logo.png" // Tell Webpack this JS file uses this image
+import logo from "../../images/logo.png"
 
 const Header = ({ siteTitle, hideLangs }) => {
 
@@ -38,35 +38,39 @@ const Header = ({ siteTitle, hideLangs }) => {
                 <NavItem>
                   <Link to='/reforestation' className='nav-link'><FormattedMessage id="home.reforestlink" /></Link>
                 </NavItem>
+                
+                <NavItem>
+                  <Link to='/atlantic-forest' className='nav-link'><FormattedMessage id="home.atlforestlink" /></Link>
+                </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     ZéCar
               </DropdownToggle>
                   <DropdownMenu left>
+                    <DropdownItem>  <Link to='/zecar' className='nav-link'>About</Link>
+
+
+                    </DropdownItem>
                     <DropdownItem>
-                      About
-                </DropdownItem>
-                    <DropdownItem>
-                      Kikkerland Design
-                </DropdownItem>
+                      <Link to='/kikkerland' className='nav-link'>Kikkerland Design</Link>
+                    </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
-                <NavItem>
-                  <Link to='/atlantic-forest' className='nav-link'><FormattedMessage id="home.atlforestlink" /></Link>
-                </NavItem>
                 <NavItem>
                   <Link to='/contact' className='nav-link'><FormattedMessage id="home.contactlink" /></Link>
                 </NavItem>
               </Nav>
             </Collapse>
-           
+
           </Navbar>
-       
-      {!hideLangs && <Langs />}
-          
+
+
         </Container>
-     
+
+
       </div>
+      <Navbar className="langs">
+        {!hideLangs && <Langs />}</Navbar>
       <div className='navbar navbar-expand-lg navbar-light bg-light'>
         <Link to='/' className='navbar-brand mx-auto'><img className="logo" src={logo} alt="logo"></img></Link>
       </div>

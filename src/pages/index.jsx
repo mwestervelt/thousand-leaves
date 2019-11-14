@@ -6,6 +6,7 @@ import withLayout from '../layout';
 // import Image from '../components/Image';
 import vista1 from '../images/vista1996.jpg'
 import vista2 from '../images/vista2019.jpg'
+import { FaBeer } from 'react-icons/fa';
 
 
 function initComparisons() {
@@ -87,27 +88,21 @@ const IndexPage = () => {
   useEffect(() => {
     initComparisons();
     // need to figure out how to keep slider position after changing languages
-    // var slider = document.querySelector(".juxtapose");
-    // console.log(slider)
   });
 
   return (
     <>
       <Jumbotron fluid >
-        <Container fluid className="d-flex justify-content-center align-items-center">
+        <Container width="100%">
         <div className="img-comp-container">
           <div class="img-comp-img">
-            <img alt="2019 vista" src={vista1} height="700" width="1200"/>
+            <img alt="2019 vista" src={vista1} height="700" width="1100"/>
           </div>
           <div class="img-comp-img img-comp-overlay">
-            <img alt="1996 vista" src={vista2} height="700" width="1200" />
+            <img alt="1996 vista" src={vista2} height="700" width="1100" />
           </div>
         </div>
         </Container>
-        {/* <div id="juxtapose-wrapper" className="juxtapose">
-            <img alt="2019 vista" src={vista1} />
-            <img alt="1996 vista" src={vista2} />
-          </div> */}
       </Jumbotron>
     </>
   )

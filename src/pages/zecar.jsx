@@ -3,43 +3,66 @@ import { FormattedMessage } from 'react-intl';
 import { Container } from 'reactstrap'
 import withLayout from '../layout';
 import Link from '../components/Link';
+// import Image from "../components/Image"
+import { StaticQuery, graphql } from 'gatsby';
+import Img from "gatsby-image"
 
 
 
 
-const ZecarPage = () => (
-    <>
-    <br></br>
-    
-    <Container>
-    <h2>
-      <FormattedMessage id="zecar.placeholder" />
-    </h2>
-    <p>
-      <FormattedMessage id="zecar.content1" />
-    </p>
-    <p>
-      <FormattedMessage id="zecar.content2" />
-    </p>
-    <p>
-      <FormattedMessage id="zecar.content3" />
-    </p>
-    <p>
-      <FormattedMessage id="zecar.content4" />
-    </p>
 
 
-    <Link to="/">
-      <FormattedMessage id="page2.Go back to the homepage" />
-    </Link>
-    </Container>
+const ZecarPage = ({ data }) => {
+
+
+    return (
+
+        <StaticQuery
+        query={zecar} 
+         
+
+            render={data => {
+               
+              data.images.edges.map( node => {
+                console.log(node)
+                return (
+           
+                    <>
+                <Img   
   
-  </>
-);
+      title="Photo image"
+      alt="Photo"
+      fluid={node.fluid}></Img>
+                
+                    </>
+                )
+              })
+               
+                }
+            }
+        />
+    )
+};
 
 const customProps = {
-  localeKey: 'zecar',
+    localeKey: 'zecar',
 };
+
+const zecar = graphql`
+query zecar {
+    images: allFile(filter: {sourceInstanceName: {eq: "images"}, relativeDirectory: {eq: "zecar"}}) {
+      edges {
+        node {
+          childImageSharp {
+             fluid(maxWidth: 1000, maxHeight: 700) {
+                ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 
 export default withLayout(customProps)(ZecarPage);
