@@ -32,24 +32,36 @@ const Header = ({ siteTitle, hideLangs }) => {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
               <Nav navbar>
-                <NavItem>
+                {/* <NavItem>
                   <Link to='/the-project' className='nav-link'><FormattedMessage id="home.projlink" /></Link>
-                </NavItem>
+                </NavItem> */}
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                  <FormattedMessage id="home.projlink" />
+                  </DropdownToggle>
+                  <DropdownMenu left="true">
+                    <DropdownItem>  
+                      <Link to='/the-project' className='nav-link'>About</Link>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <Link to='/people' className='nav-link'><FormattedMessage id="home.peoplelink" /></Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
                 <NavItem>
                   <Link to='/reforestation' className='nav-link'><FormattedMessage id="home.reforestlink" /></Link>
                 </NavItem>
-                
+
                 <NavItem>
                   <Link to='/atlantic-forest' className='nav-link'><FormattedMessage id="home.atlforestlink" /></Link>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     ZéCar
-              </DropdownToggle>
-                  <DropdownMenu left>
-                    <DropdownItem>  <Link to='/zecar' className='nav-link'>About</Link>
-
-
+                  </DropdownToggle>
+                  <DropdownMenu left="true">
+                    <DropdownItem>  
+                      <Link to='/zecar' className='nav-link'>About</Link>
                     </DropdownItem>
                     <DropdownItem>
                       <Link to='/kikkerland' className='nav-link'>Kikkerland Design</Link>
@@ -63,8 +75,6 @@ const Header = ({ siteTitle, hideLangs }) => {
             </Collapse>
 
           </Navbar>
-
-
         </Container>
 
 

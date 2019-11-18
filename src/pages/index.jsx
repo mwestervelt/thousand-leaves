@@ -7,6 +7,8 @@ import withLayout from '../layout';
 import vista1 from '../images/vista1996.jpg'
 import vista2 from '../images/vista2019.jpg'
 
+
+
 function initComparisons() {
   var x, i;
   x = document.getElementsByClassName("img-comp-overlay");
@@ -86,22 +88,27 @@ const IndexPage = () => {
   useEffect(() => {
     initComparisons();
     // need to figure out how to keep slider position after changing languages
+  
   });
 
   return (
     <>
       <Jumbotron fluid >
-        <Container width="100%">
+      <iframe title="juxtapose" frameBorder="0" className="juxtapose" width="100%" height="1811" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d82db1d8-0a2e-11ea-b9b8-0edaf8f81e27"></iframe>
+
+      
+        {/* <Container width="100%">
         <div className="img-comp-container">
-          <div class="img-comp-img">
+          <div className="img-comp-img">
             <img alt="2019 vista" src={vista1} height="700" width="1100"/>
           </div>
-          <div class="img-comp-img img-comp-overlay">
+          <div className="img-comp-img img-comp-overlay">
             <img alt="1996 vista" src={vista2} height="700" width="1100" />
           </div>
         </div>
-        </Container>
+        </Container> */}
       </Jumbotron>
+     
     </>
   )
 };

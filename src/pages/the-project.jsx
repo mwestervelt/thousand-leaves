@@ -12,8 +12,9 @@ const ProjectPage = () => (
     <br></br>
     
     <Container>
-    <h2>
+    <h2><strong>
       <FormattedMessage id="project.placeholder" />
+      </strong>
     </h2>
     <p>
       <FormattedMessage id="project.content1" />

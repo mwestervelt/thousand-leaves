@@ -9,9 +9,9 @@ const ContactPage = () => (
   <>
     <Container>
         <br></br>
-    <h1>
-      <FormattedMessage id="contact.placeholder" />
-    </h1>
+    <h2><strong>
+      <FormattedMessage id="contact.placeholder" /></strong>
+    </h2>
   
  <Form>
      <FormGroup>

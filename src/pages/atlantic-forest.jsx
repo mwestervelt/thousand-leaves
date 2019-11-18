@@ -12,8 +12,8 @@ const ForestPage = () => (
     <br></br>
     
     <Container>
-    <h2>
-      <FormattedMessage id="atlForest.placeholder" />
+    <h2><strong>
+      <FormattedMessage id="atlForest.placeholder" /></strong>
     </h2>
     <p>
       <FormattedMessage id="atlForest.content1" />

@@ -2,13 +2,9 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import { Container, Button } from 'reactstrap'
 import withLayout from '../layout';
-import Link from '../components/Link';
 // import Image from "../components/Image"
 import { StaticQuery, graphql } from 'gatsby';
 import Img from "gatsby-image"
-
-
-
 
 
 
@@ -18,7 +14,7 @@ const ZecarPage = ({ data }) => {
     <>
       <br></br>
       <Container>
-      <h2 className="text-center"><strong>
+      <h2 ><strong>
         <FormattedMessage id="zecar.placeholder" />
       </strong>
       </h2>
@@ -37,7 +33,7 @@ const ZecarPage = ({ data }) => {
     </Container>
     <Container className="text-center my-5" >
     <Button color="primary" size="lg">
-      <FormattedMessage id="zecar.content5" />
+      <a style={{color: 'white', textDecoration: 'none'}} href="https://kikkerland.com/products/zecar-flywheel-car"><FormattedMessage id="zecar.content5" /></a>
     </Button>
     </Container>
     

@@ -10,5 +10,6 @@ export default {
   'projlink': 'The Project',
   'reforestlink': 'Reforestation',
   'atlforestlink': 'Atlantic Forest',
-  'zecarlink': 'ZéCar'
+  'zecarlink': 'ZéCar',
+  'peoplelink': 'People'
 };

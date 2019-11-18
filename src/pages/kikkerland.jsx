@@ -14,7 +14,7 @@ const KikkerlandPage = () => (
     <br></br>
     
     <Container>
-    <h2 className="text-center"><strong>
+    <h2><strong>
         <FormattedMessage id="kikkerland.placeholder" />
       </strong>
       </h2>
@@ -29,7 +29,8 @@ const KikkerlandPage = () => (
 
     <Container className="text-center my-5" >
     <Button color="danger" size="lg">
-      <FormattedMessage id="kikkerland.content4" />
+        <a style={{color: 'white', textDecoration: 'none'}} href="https://kikkerland.com/"> <FormattedMessage id="kikkerland.content4" /></a>
+     
     </Button>
     </Container>
     

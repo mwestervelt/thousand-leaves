@@ -9,7 +9,8 @@ export default {
     'projlink': 'O Projeto',
     'reforestlink': 'Reflorestamento',
     'atlforestlink': 'A Mata Atlântica',
-    'zecarlink': 'ZéCar'
+    'zecarlink': 'ZéCar',
+    'peoplelink': 'Gente'
 
 
   };
