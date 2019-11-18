@@ -6,8 +6,6 @@ import withLayout from '../layout';
 // import Image from '../components/Image';
 import vista1 from '../images/vista1996.jpg'
 import vista2 from '../images/vista2019.jpg'
-import { FaBeer } from 'react-icons/fa';
-
 
 function initComparisons() {
   var x, i;

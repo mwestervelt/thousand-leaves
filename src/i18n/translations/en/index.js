@@ -7,9 +7,10 @@ import project from './the-project';
 import atlForest from './atlantic-forest';
 import contact from './contact';
 import zecar from './zecar';
-import reforest from './reforestation'
+import reforest from './reforestation';
+import kikkerland from './kikkerland';
 
 
-const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest };
+const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest, kikkerland };
 
 export default flatten(messages);

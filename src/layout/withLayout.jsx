@@ -48,6 +48,7 @@ const withLayout = customProps => PageComponent => props => {
                 <PageComponent {...props} />
               </main>
               <footer>
+                <br></br><br></br>
     
               </footer>
             
