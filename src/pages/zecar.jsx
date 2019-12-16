@@ -9,45 +9,48 @@ import Img from "gatsby-image"
 
 
 const ZecarPage = ({ data }) => {
+  const zec1 = data.images.edges[0].node.childImageSharp.fluid
+  const zec2 = data.images.edges[1].node.childImageSharp.fluid
+  const zec3 = data.images.edges[2].node.childImageSharp.fluid
 
   return (
     <>
       <br></br>
       <Container>
-      <h2 ><strong>
-        <FormattedMessage id="zecar.placeholder" />
-      </strong>
-      </h2>
-      <p>
-      <FormattedMessage id="zecar.content1" />
-    </p>
-    <p>
-      <FormattedMessage id="zecar.content2" />
-    </p>
-    <p>
-      <FormattedMessage id="zecar.content3" />
-    </p>
-    <p>
-      <FormattedMessage id="zecar.content4" />
-    </p>
-    </Container>
-    <Container className="text-center my-5" >
-    <Button color="primary" size="lg">
-      <a style={{color: 'white', textDecoration: 'none'}} href="https://kikkerland.com/products/zecar-flywheel-car"><FormattedMessage id="zecar.content5" /></a>
-    </Button>
-    </Container>
-    
+          <Img key={zec2.src} fluid={zec2} />
+          <br></br>
+        <h2>
+          <strong>
+            <FormattedMessage id="zecar.placeholder" />
+          </strong>
+        </h2>
+        <p>
+          <FormattedMessage id="zecar.content1" />
+        </p>
+        <p>
+          <FormattedMessage id="zecar.content2" />
+        </p>
+        <Img key={zec1.src} fluid={zec1} />
+        <br></br>
+        <p>
+          <FormattedMessage id="zecar.content3" />
+        </p>
+        <p>
+          <FormattedMessage id="zecar.content4" />
+        </p>
+        <Img key={zec3.src} fluid={zec3} />
+        <br></br>
+      </Container>
+      <Container className="text-center my-5" >
+        <Button  color="primary" size="lg">
+          <a style={{ color: 'white', textDecoration: 'none' }} href="https://kikkerland.com/products/zecar-flywheel-car" target="_blank"><FormattedMessage id="zecar.content5" /></a>
+        </Button>
+      </Container>
+
       <StaticQuery
         query={zecar}
         render={data => (
           <div>
-            {data.images.edges.map(({ node }) => (
-              <Container>
-
-                <Img key={node.childImageSharp.fluid} fluid={node.childImageSharp.fluid} />
-
-              </Container>
-            ))}
           </div>
         )}
       />
