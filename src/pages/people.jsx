@@ -62,14 +62,14 @@ const PeoplePage = ({ data }) => {
           <Col>
             <ul>
               {names.slice(0, 16).map(name => (
-                <li>{name}</li>
+                <li key={name}>{name}</li>
               ))}
             </ul>
           </Col>
           <Col>
             <ul>
               {names.slice(16).map(name1 => (
-                <li>{name1}</li>
+                <li key={name1}>{name1}</li>
               ))}
             </ul>
           </Col>

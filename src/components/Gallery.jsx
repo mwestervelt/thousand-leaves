@@ -18,6 +18,7 @@ const Gallery = ({ images, itemsPerRow: itemsPerRowByBreakpoints }) => {
                 // sx={{
                 //     mx: 1
                 //   }}
+                    key={image.originalName}
                     width={rowAspectRatioSumsByBreakpoints.map(
                         // Return a value for each breakpoint
                         (rowAspectRatioSums, j) => {
@@ -30,8 +31,9 @@ const Gallery = ({ images, itemsPerRow: itemsPerRowByBreakpoints }) => {
                     css={{ display: 'inline-block' }}
                 >
                     <Img
-                        key={image.src}
+                        key={image.originalName}
                         fluid={image} 
+                        alt= {image.originalName}
                     />
                 </Box>
             ))}
