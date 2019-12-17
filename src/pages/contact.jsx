@@ -19,7 +19,7 @@ const ContactPage = () => (
 
      <FormGroup>
        <Label for="exampleEmail">Name</Label>
-       <Input type="text" name="email" id="exampleEmail" placeholder="Name" />
+       <Input type="text" name="name" id="exampleEmail" placeholder="Name" />
      </FormGroup>
      <FormGroup>
        <Label for="examplePassword">Email</Label>
@@ -27,7 +27,7 @@ const ContactPage = () => (
      </FormGroup>
      <FormGroup>
        <Label for="exampleText">Message</Label>
-       <Input type="textarea" name="text" id="exampleText" rows="5"/>
+       <Input type="textarea" name="message" id="exampleText" rows="5"/>
      </FormGroup>
      <Button color="success"><FormattedMessage id="contact.submit" /></Button>
    </Form>

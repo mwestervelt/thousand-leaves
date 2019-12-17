@@ -193,7 +193,6 @@ const q = graphql`
               originalName
                 ...GatsbyImageSharpFluid
             }
-            
           }
         }
       }
@@ -207,11 +206,9 @@ const q = graphql`
               originalName
                 ...GatsbyImageSharpFluid
             }
-            
           }
         }
       }
     }
-
   }
 `
