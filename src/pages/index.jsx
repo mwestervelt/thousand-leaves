@@ -94,8 +94,7 @@ const IndexPage = () => {
   return (
     <>
       <Jumbotron fluid >
-      <iframe title="juxtapose" frameBorder="0" className="juxtapose" width="100%" height="1811" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d82db1d8-0a2e-11ea-b9b8-0edaf8f81e27"></iframe>
-
+      <iframe title="comparison of landscape" frameborder="0" class="juxtapose" width="100%" height="1711" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=5694d2b0-21e8-11ea-b9b8-0edaf8f81e27"></iframe>
       
         {/* <Container width="100%">
         <div className="img-comp-container">
