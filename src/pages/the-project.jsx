@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import { Container, Row, Col } from 'reactstrap'
 import withLayout from '../layout';
 import Link from '../components/Link';
-import { useStaticQuery, StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import Img from "gatsby-image"
 // import Gallery from '../components/Gallery';
 
@@ -61,7 +61,6 @@ const ProjectPage = () => {
           </Col>
         </Row>
         <br></br>
-        {/* <Img key={kids.src} fluid={kids[0].node.childImageSharp.fluid} /> */}
         <h2><strong>
           <FormattedMessage id="project.placeholder" />
         </strong>
