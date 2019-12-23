@@ -10,8 +10,10 @@ import zecar from './zecar';
 import reforest from './reforestation';
 import kikkerland from './kikkerland';
 import people from './people'
+import tools from './tools'
+import trees from './trees'
 
 
-const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest, kikkerland, people };
+const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest, kikkerland, people, tools, trees };
 
 export default flatten(messages);

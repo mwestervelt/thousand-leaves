@@ -43,13 +43,13 @@ const names = ["Aylton (Juninho) Alves",
 
 const PeoplePage = ({ data }) => {
   // console.log(data.allFile.edges);
-  const kids = data.allFile.edges.slice(18, 19)
+  // const kids = data.allFile.edges.slice(18, 19)
 
   return (
     <>
       <br></br>
       <Container>
-        <Img key={kids.src} fluid={kids[0].node.childImageSharp.fluid} />
+        <Img fluid={{ ...data.kids.childImageSharp.fluid, aspectRatio: 1.77 }} />
         <br></br>
         <h2><strong>
           <FormattedMessage id="people.placeholder" />
@@ -89,6 +89,13 @@ const PeoplePage = ({ data }) => {
                         ...GatsbyImageSharpFluid
                     }
                   }
+                }
+              }
+            }            
+            kids: file(relativePath: { eq: "People/Kids Cleanup 04.jpg" }) {
+              childImageSharp {
+                fluid(maxWidth: 4000) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

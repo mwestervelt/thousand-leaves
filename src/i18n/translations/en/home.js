@@ -11,5 +11,9 @@ export default {
   'reforestlink': 'Reforestation',
   'atlforestlink': 'Atlantic Forest',
   'zecarlink': 'ZéCar',
-  'peoplelink': 'People'
+  'peoplelink': 'People',
+  'toolslink': 'Tools',
+  'manuallink': 'Manual',
+  'treeslink': 'Trees Planted'
+
 };

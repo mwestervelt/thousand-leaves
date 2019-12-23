@@ -10,7 +10,10 @@ export default {
     'reforestlink': 'Reflorestamento',
     'atlforestlink': 'A Mata Atlântica',
     'zecarlink': 'ZéCar',
-    'peoplelink': 'Gente'
+    'peoplelink': 'Gente',
+    'toolslink': 'Ferramentas',
+    'manuallink': 'Manual',
+    'treeslink': 'Arvores Plantadas'
 
 
   };

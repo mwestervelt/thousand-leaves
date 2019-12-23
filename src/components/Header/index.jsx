@@ -7,11 +7,9 @@ import {
   Container,
   Collapse,
   Navbar,
-  NavbarBrand,
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -46,11 +44,24 @@ const Header = ({ siteTitle, hideLangs }) => {
                     <DropdownItem>
                       <Link to='/people' className='nav-link'><FormattedMessage id="home.peoplelink" /></Link>
                     </DropdownItem>
+                    <DropdownItem>
+                      <Link to='/trees' className='nav-link'><FormattedMessage id="home.treeslink" /></Link>
+                    </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
-                <NavItem>
-                  <Link to='/reforestation' className='nav-link'><FormattedMessage id="home.reforestlink" /></Link>
-                </NavItem>
+                <UncontrolledDropdown nav inNavbar>
+                  <DropdownToggle nav caret>
+                  <FormattedMessage id="home.reforestlink" />
+                  </DropdownToggle>
+                  <DropdownMenu left="true">
+                    <DropdownItem>  
+                    <Link to='/reforestation' className='nav-link'><FormattedMessage id="home.manuallink" /></Link>
+                    </DropdownItem>
+                    <DropdownItem>
+                    <Link to='/tools' className='nav-link'><FormattedMessage id="home.toolslink" /></Link>
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
 
                 <NavItem>
                   <Link to='/atlantic-forest' className='nav-link'><FormattedMessage id="home.atlforestlink" /></Link>

@@ -13,7 +13,7 @@ const ProjectPage = () => {
   const data = useStaticQuery(graphql`
   fragment aboutImages on File {
     childImageSharp {
-      fluid(maxWidth: 4000) {
+      fluid(maxHeight: 4000) {
         ...GatsbyImageSharpFluid
       }
     }

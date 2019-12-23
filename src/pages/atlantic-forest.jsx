@@ -11,7 +11,7 @@ import Gallery from '../components/Gallery';
 
 const ForestPage = () => {
   const data = useStaticQuery(graphql`
-  fragment aboutImages on File {
+  fragment forestImages on File {
     childImageSharp {
       fluid(maxWidth: 4000) {
         ...GatsbyImageSharpFluid
@@ -20,31 +20,31 @@ const ForestPage = () => {
   }
   query  {
     image1: file(relativePath: { eq: "Atlantic forest/Canastra ANTA.jpg" }) {
-      ...aboutImages
+      ...forestImages
     }
     pond: file(relativePath: { eq: "Atlantic forest/Aiuruoca.jpg" }) {
-      ...aboutImages
+      ...forestImages
     }
     redflower: file(relativePath: { eq: "Atlantic forest/Bilbergia pyramidalis.JPG" }) {
-      ...aboutImages
+      ...forestImages
     }
     pond2: file(relativePath: { eq: "Atlantic forest/Bocaina.jpg" }) {
-      ...aboutImages
+      ...forestImages
     }
     image2: file(relativePath: { eq: "Atlantic forest/fac.jpg" }) {
-      ...aboutImages
+      ...forestImages
     }
     redflower2: file(relativePath: { eq: "Atlantic forest/Forest flower.jpg" }) {
-      ...aboutImages
+      ...forestImages
     }
     orchid: file(relativePath: { eq: "Atlantic forest/Orchyd.jpg" }) {
-      ...aboutImages
+      ...forestImages
     }
     flower: file(relativePath: { eq: "Atlantic forest/Paineira.JPG" }) {
-      ...aboutImages
+      ...forestImages
     }
     image9: file(relativePath: { eq: "Atlantic forest/5 Ipês na mata.jpg" }) {
-      ...aboutImages
+      ...forestImages
     }
     allFile(filter: {relativeDirectory: {eq: "Atlantic forest/flowers"}}) {
       edges {
@@ -79,7 +79,7 @@ const ForestPage = () => {
         </p>
         <Row className="row no-gutters">
           <Col>
-            <Img fluid={data.image2.childImageSharp.fluid} />
+            <Img fluid={data.image2.childImageSharp.fluid}  />
           </Col>
         </Row>
         <br></br>

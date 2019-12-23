@@ -79,7 +79,7 @@ export default {
 
     'content34': `Crowning in the diameter of approximately 1 meter(3.5'to 5' ø) is the first step.The holes should be opened in the center of the crowned area, and have a volume of approximately 15 liters; 4 gallons, or the volume of a large bucket.They can be opened with a shovel, hoe or medium auger, and any stones found in the pit, as well as roots or any other debris should be removed completely.`,
 
-     'content34': 
+     'content344': 
 `FERTILIZATION AS WE DO IT IN THE MIL FOLHAS PROJECT:`,
 
  'content35': ` There are many ways to fertilize saplings for a reforestation project, and there is a consensus that the saplings, while in sachets, bags, or Tubetes should not be super well fertilized or pampered too much, so that they do not miss all those good nutrients when they are finally planted in the ground.It is always better to concentrate most of the fertilization for after the saplings are planted.The saplings must also go to the sun relatively early, to 'harden', and get used to the harsh conditions in the field, and should not stay too long in the bags so that their roots do not grow through the bags, and eventually penetrate the soil, to end up being uprooted when removed for transport, which causes a trauma to the plant, a common occurrence that should be avoided`,

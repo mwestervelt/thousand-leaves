@@ -1,25 +1,27 @@
 import React, { useEffect } from 'react';
-import { FormattedMessage } from 'react-intl';
-import { Jumbotron, Container } from 'reactstrap'
+// import { FormattedMessage } from 'react-intl';
+import { Jumbotron } from 'reactstrap'
 import withLayout from '../layout';
 // import Link from '../components/Link';
 // import Image from '../components/Image';
-import vista1 from '../images/vista1996.jpg'
-import vista2 from '../images/vista2019.jpg'
+// import vista1 from '../images/vista1996.jpg'
+// import vista2 from '../images/vista2019.jpg'
 
 
 
 function initComparisons() {
   var x, i;
+  // x is top layer image div
   x = document.getElementsByClassName("img-comp-overlay");
   for (i = 0; i < x.length; i++) {
     compareImages(x[i]);
   }
   function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
+    var slider, clicked = 0, w, h;
     /*get the width and height of the img element*/
     w = img.offsetWidth;
     h = img.offsetHeight;
+    console.log(w, h);
     /*set the width of the img element to 50%:*/
     img.style.width = (w / 2) + "px";
     /*create slider:*/
@@ -94,15 +96,15 @@ const IndexPage = () => {
   return (
     <>
       <Jumbotron fluid >
-      <iframe title="comparison of landscape" frameborder="0" class="juxtapose" width="100%" height="1711" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=5694d2b0-21e8-11ea-b9b8-0edaf8f81e27"></iframe>
-      
-        {/* <Container width="100%">
+      <iframe title="comparison of landscape" frameBorder="0" className="juxtapose" width="100%" height="800 px" src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=5694d2b0-21e8-11ea-b9b8-0edaf8f81e27"></iframe>
+    
+        {/* <Container fluid width="100%">
         <div className="img-comp-container">
           <div className="img-comp-img">
-            <img alt="2019 vista" src={vista1} height="700" width="1100"/>
+            <img alt="2019 vista" src={vista1} height="100%" width="100%"/>
           </div>
           <div className="img-comp-img img-comp-overlay">
-            <img alt="1996 vista" src={vista2} height="700" width="1100" />
+            <img alt="1996 vista" src={vista2}  width="100%" height="1711" />
           </div>
         </div>
         </Container> */}

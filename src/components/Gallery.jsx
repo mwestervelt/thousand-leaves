@@ -28,12 +28,14 @@ const Gallery = ({ images, itemsPerRow: itemsPerRowByBreakpoints }) => {
                             return `${(image.aspectRatio / rowAspectRatioSum) * 100}%`;
                         },
                     )}
-                    css={{ display: 'inline-block' }}
+                    css={{ display: 'inline-block'}}
                 >
                     <Img
                         key={image.originalName}
                         fluid={image} 
                         alt= {image.originalName}
+                        // style={{ margin: '5px'}}
+                        imgStyle={{ objectFit: 'cover' }}
                     />
                 </Box>
             ))}
