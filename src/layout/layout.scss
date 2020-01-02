@@ -43,7 +43,7 @@
 @import "bootstrap/scss/tables";
 @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
-// @import "bootstrap/scss/transitions";
+@import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group";
@@ -59,7 +59,7 @@
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
-// @import "bootstrap/scss/close";
+@import "bootstrap/scss/close";
 // @import "bootstrap/scss/modal";
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
@@ -109,9 +109,17 @@
 .hi {
 	background-image: url(https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=d82db1d8-0a2e-11ea-b9b8-0edaf8f81e27)
 }
+.myNav {
+	min-height: 50px !important;
+}
+// .myLogo {
+// 	min-height: 100px !important;
+// }
+
 
 .navbar-nav {
-  flex-direction: row!important;
+//   flex-direction: row!important;
+
 
   & > * {
     padding-left: 10px; 
@@ -143,6 +151,12 @@ a.nav-link:hover {
 
 .logo{
   max-width: 10em;
+//   position: absolute;
+//   padding: 1em;
+//   left: 50%;
+//   margin-left: -50px;
+//   top: 50%;
+//   margin-top: -50px;
 }
 
 .dropdown-menu {

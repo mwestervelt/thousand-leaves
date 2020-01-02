@@ -12,5 +12,9 @@ export default {
     'col2': ` Nome Científico`,
     'col3': `Família`,
     'col4': `Página`,
+    'table2': `Árvores com características SECUNDÁRIAS INICIAIS de acordo com clima, altitude, e solo da região:`,
+    'table3': `Árvores com características SECUNDÁRIAS TARDIAS de acordo com clima, altitude, e solo da região:`,
+    'table4': `Árvores com características CLIMÁXICAS de acordo com clima, altitude, e solo da região:`
+
    
   };

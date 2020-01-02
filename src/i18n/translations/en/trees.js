@@ -12,5 +12,10 @@ export default {
     'col2': `Scientific Name`,
     'col3': `Family`,
     'col4': `Page`,
+    'table2': `Trees with EARLY SECONDARY characteristics, according to climate, altitude, and soil in the region:`,
+    'table3': `Trees with LATE SECONDARY characteristics, according to climate, altitude, and soil in the region:`,
+    'table4': `Trees with CLIMAX characteristics, according to climate, altitude, and soil in the region:`
+
+
    
   };
