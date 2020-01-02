@@ -27,4 +27,15 @@ export default {
     'content12': `Esse projeto é dedicado, com amor, à Philip e Molly Jenkins.`,
     
     'Go to page 2': 'Go to page 2',
+
+    'original': 'Foto De 1996 Com As Condições Originais Do Terreno Desmatado.',
+    'prediction': 'Imagem Em Photoshop Prevendo O Resultado Do Projeto Para Vinte Anos Depois',
+    'result': 'Foto Tirada Por Um Drone Em 2016, Vinte Anos Depois Do Início Do Projeto, Mostrando O Resultado Do Trabalho.',
+    'aerial': 'Aerofotografia De 1994 Destacando A Área Do Projeto.',
+    'altimetry': 'Mapa De Altimetria Destacando A Área Do Projeto.',
+    'google': `Imagem De Satélite Do Google Earth De 2019.`,
+    'students7': `Alunos Da E.E. João Kopke E Cartazes Com Frases Ecológicas.`,
+    'students8': `Alunos Da E.E. João Kopke Depositando O Lixo Recolhido Da Rua Nas Lixeiras.`,
+    'students9': `Alunos Da E.E. João Kopke Plantando Árvores No Projeto Mil Folhas`,
+    'students10': `Criança Da Turma Mais Nova Da E.E. João Kopke Plantando Uma Árvore No Projeto Mil Folhas.`,
 };

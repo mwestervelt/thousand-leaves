@@ -28,4 +28,16 @@ export default {
     'content12': `This project is dedicated with love to Philip and Molly Jenkins.`,
   
     'Go to page 2': 'Go to page 2',
+
+    'original': 'Photo From 1996 With The Original Deforested Landscape',
+    'prediction': 'Photoshop Image Predicting The Result Of The Project For Twenty Years Later',
+    'result': 'Photo Made By A Drone In 2016, Twenty Years After The Beginning Of The Project, Showing The Result Of The Work.',
+    'aerial': 'Aerial Photograph Highlighting The Project Area.',
+    'altimetry': 'Map Of Altimetry Highlighting The Project Area.',
+    'google': `Google Earth Satellite Image From 2019.`,
+    'students7': `Students From The E.E. João Kopke And Signs With Environmental Sayings.`,
+    'students8': `Students From The E.E. João Kopke Placing The Trash Removed From The Street In The Dumpsters.`,
+    'students9': `Students From The E.E. João Kopke Planting Trees In The Mil Folhas Project.`,
+    'students10': `Child From The Youngest Class At The E.E. João Kopke Planting A Tree In The Mil Folhas Project.`,
+
 };

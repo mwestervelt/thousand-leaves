@@ -2,18 +2,14 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Link from '../Link';
 import { FormattedMessage } from 'react-intl';
-import Img from "gatsby-image";
-import { useStaticQuery, graphql } from 'gatsby';
 import Langs from '../Langs';
 import {
-  Container,
   Collapse,
   Navbar,
   NavbarBrand,
   NavbarToggler,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -21,32 +17,20 @@ import {
 } from 'reactstrap'
 import logo from "../../images/logo.png"
 
-const Header = ({ hideLangs, siteTitle }) => {
-
-  const data = useStaticQuery(graphql`
-    query { logo: file(relativePath: { eq: "logo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }`)
+const Header = ({ hideLangs }) => {
 
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
+  
   return (
     <>
       <div >
         <Navbar className='mx-auto' color="light" light expand="md">
           <NavbarToggler onClick={toggle} />
           <NavbarBrand className='mx-auto'>
-            {/* <Link to='/' className=''><img className="img-fluid logo" src={logo} alt="logo"></img></Link> */}
           </NavbarBrand>
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mx-auto" navbar>
-             
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   <FormattedMessage id="home.projlink" />
@@ -74,9 +58,11 @@ const Header = ({ hideLangs, siteTitle }) => {
                   <DropdownItem>
                     <Link to='/tools' className='nav-link'><FormattedMessage id="home.toolslink" /></Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to='/saplings' className='nav-link'><FormattedMessage id="home.saplingslink" /></Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-
               <NavItem>
                 <Link to='/atlantic-forest' className='nav-link'><FormattedMessage id="home.atlforestlink" /></Link>
               </NavItem>
@@ -96,13 +82,11 @@ const Header = ({ hideLangs, siteTitle }) => {
               <NavItem>
                 <Link to='/contact' className='nav-link'><FormattedMessage id="home.contactlink" /></Link>
               </NavItem>
-            
             </Nav>
-            <span className="my-2 my-lg-0">
+            <span className="ml-auto langs">
               {!hideLangs && <Langs />}
               </span>
           </Collapse>
-
         </Navbar>
         <Navbar className='mx-auto' color="light" light expand="md">
           <NavbarBrand className='mx-auto myLogo'>
@@ -110,82 +94,6 @@ const Header = ({ hideLangs, siteTitle }) => {
           </NavbarBrand>
         </Navbar>
       </div>
-
-      {/*  <nav className='navbar navbar-expand-lg navbar-light bg-light myNav navbar-default navbar-static-top' role="navigation">
-   {/* mx-auto 
-   <Container>
-          <Navbar color="light" light expand="md">
-          <NavbarToggler left onClick={toggle} />
-          <NavbarBrand ></NavbarBrand>
-        <Collapse isOpen={isOpen} navbar>
-              <Nav className="mr-auto" navbar>
-                {/* <NavItem>
-                  <Link to='/the-project' className='nav-link'><FormattedMessage id="home.projlink" /></Link>
-                </NavItem> 
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                  <FormattedMessage id="home.projlink" />
-                  </DropdownToggle>
-                  <DropdownMenu left="true">
-                    <DropdownItem>  
-                      <Link to='/the-project' className='nav-link'>About</Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      <Link to='/people' className='nav-link'><FormattedMessage id="home.peoplelink" /></Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      <Link to='/trees' className='nav-link'><FormattedMessage id="home.treeslink" /></Link>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                  <FormattedMessage id="home.reforestlink" />
-                  </DropdownToggle>
-                  <DropdownMenu left="true">
-                    <DropdownItem>  
-                    <Link to='/reforestation' className='nav-link'><FormattedMessage id="home.manuallink" /></Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                    <Link to='/tools' className='nav-link'><FormattedMessage id="home.toolslink" /></Link>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-
-                <NavItem>
-                  <Link to='/atlantic-forest' className='nav-link'><FormattedMessage id="home.atlforestlink" /></Link>
-                </NavItem>
-                <UncontrolledDropdown nav inNavbar>
-                  <DropdownToggle nav caret>
-                    ZéCar
-                  </DropdownToggle>
-                  <DropdownMenu left="true">
-                    <DropdownItem>  
-                      <Link to='/zecar' className='nav-link'>About</Link>
-                    </DropdownItem>
-                    <DropdownItem>
-                      <Link to='/kikkerland' className='nav-link'>Kikkerland Design</Link>
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-                <NavItem>
-                  <Link to='/contact' className='nav-link'><FormattedMessage id="home.contactlink" /></Link>
-                </NavItem>
-              </Nav>
-            </Collapse>
-
-          </Navbar>
-          <Navbar className="langs">
-        {!hideLangs && <Langs />}
-        </Navbar>
-      <div className='navbar navbar-expand-lg navbar-light bg-light myLogo'>
-        <Link to='/' className='navbar-brand mx-auto'><img className="logo" src={logo} alt="logo"></img></Link>
-      </div>
-          </Container>
-      </nav> <br></br>*/}
-
-
-
     </>)
 }
   ;

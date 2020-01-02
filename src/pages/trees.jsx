@@ -1,53 +1,19 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Container, Row, Col, Table } from 'reactstrap'
+import { Container, Table } from 'reactstrap'
 import withLayout from '../layout';
 import Link from '../components/Link';
-import { useStaticQuery, graphql } from 'gatsby';
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 // import Gallery from '../components/Gallery';
 
 
 
 const TreesPage = () => {
-    // console.log(data.allFile.edges);
-    const data = useStaticQuery(graphql`
-  fragment tools on File {
-    childImageSharp {
-      fluid(maxHeight: 850) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-  query  {
-    tools1: file(relativePath: { eq: "Tools/07 Botas.jpg" }) {
-        ...tools
-    }
-    tools2: file(relativePath: { eq: "Tools/06 Corte.jpg" }) {
-      ...tools
-    }
-    allFile(filter: {relativeDirectory: {eq: "Tools/toolsGal"}}) {
-        edges {
-          node {
-            childImageSharp {
-               fluid(maxWidth: 4000) {
-                aspectRatio
-                originalName
-                  ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-  }
-`)
 
     return (
         <>
             <br></br>
             <Container>
-                {/* <img className="img-fluid" src="https://dummyimage.com/wsxga" />
-                <br></br><br></br> */}
                 <h2><strong>
                     <FormattedMessage id="trees.placeholder" />
                 </strong>
@@ -59,7 +25,7 @@ const TreesPage = () => {
                 <p className="text-center">
                     <FormattedMessage id="trees.content2" />
                     {/* <a target="_blank"  rel="noopener noreferrer" href="trees.content3"><FormattedMessage id="trees.content3" /></a> */}
-                    <FormattedMessage id="trees.content3">{link => <a href={link} target="_blank"> <FormattedMessage id="trees.content4" /></a>}</FormattedMessage>
+                    <FormattedMessage id="trees.content3">{link => <a rel="noopener noreferrer" href={link} target="_blank"> <FormattedMessage id="trees.content4" /></a>}</FormattedMessage>
                 </p>
                 <br></br>
 
@@ -1019,22 +985,11 @@ const TreesPage = () => {
                                 <div align="right">141</div>
                             </td>
                         </tr>
-                    </tbody></Table>
+                    </tbody>
+                </Table>
 
 
-
-                {/* put photo Gallery here */}
-                {/* <Gallery
-            itemsPerRow={[1,2]} 
-            images={data.allFile.edges.map(({ node }) => ({
-              ...node.childImageSharp.fluid
-            }))}
-          /> */}
                 <br></br>
-
-
-
-
 
                 <Link to="/">
                     <FormattedMessage id="page2.Go back to the homepage" />

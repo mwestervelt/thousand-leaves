@@ -8,7 +8,6 @@ import Img from "gatsby-image"
 // import Gallery from '../components/Gallery';
 
 
-
 const ProjectPage = () => {
   const data = useStaticQuery(graphql`
   fragment aboutImages on File {
@@ -55,9 +54,11 @@ const ProjectPage = () => {
         <Row className="row no-gutters">
           <Col>
             <Img fluid={data.before.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.original" /></small>
           </Col>
           <Col>
             <Img fluid={data.after.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.result" /></small>
           </Col>
         </Row>
         <br></br>
@@ -80,14 +81,17 @@ const ProjectPage = () => {
         <Row className="row">
           <Col>
             <Img key={data.image1.childImageSharp.fluid.src} fluid={data.image1.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.google" /></small>
           </Col>
         </Row><br></br>
         <Row>
           <Col className="col-7">
             <Img key={data.image3.childImageSharp.fluid.src} fluid={data.image3.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.altimetry" /></small>
           </Col>
           <Col>
             <Img key={data.image2.childImageSharp.fluid.src} fluid={data.image2.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.aerial" /></small>
           </Col>
         </Row>
         <br></br>
@@ -107,9 +111,13 @@ const ProjectPage = () => {
         <Row >
           <Col className="col-7">
             <Img key={data.image4.childImageSharp.fluid.src} fluid={data.image4.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.students9" /></small>
+
           </Col>
           <Col>
             <Img key={data.image5.childImageSharp.fluid.src} fluid={data.image5.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.students10" /></small>
+
           </Col>
         </Row>
 
@@ -130,9 +138,13 @@ const ProjectPage = () => {
         <Row >
           <Col>
             <Img key={data.image6.childImageSharp.fluid.src} fluid={data.image6.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.students8" /></small>
+
           </Col>
           <Col>
             <Img key={data.image7.childImageSharp.fluid.src} fluid={data.image7.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="project.students7" /></small>
+
           </Col>
         </Row>
 

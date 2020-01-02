@@ -169,6 +169,19 @@ a.nav-link:hover {
 
 }
 
+@include media-breakpoint-down(sm) {
+	.langs {
+	  position: relative !important;
+	}
+  }
+  @include media-breakpoint-down(md) {
+	.langs {
+	  position: relative !important;
+	}
+  }
+
+
+
 /// slider stuff
 
 * {box-sizing: border-box;}

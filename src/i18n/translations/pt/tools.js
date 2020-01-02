@@ -13,7 +13,10 @@ export default {
     'content8': `Outras ferramentas importantes são as usadas no combate ao fogo. Procure o IEF (Instituto Estadual de Florestas) na sua região para saber como treinar uma brigada de incêndio florestal, mas essencialmente as duas ferramentas mais importantes são um abafador de fogo, feito com placas de borracha lonada e uma haste longa, e uma ferramenta que precisa ser adaptada que é um ancinho com uma enxada no lado de cima (2 em1) para remover folhas e galhos secos do caminho do fogo para outra pessoa abafar as chamas. Pesquise.`,
     'content9': `O porta iscas de formigas é outra peça de ferramenta importante, sobretudo nos meses de primavera (Set. Out. Nov.) durante os primeiros plantios, porque uma colônia de formigas cortadeiras pode arruinar o plantio de 3 mil mudas em apenas uma semana. Sentimos pena das formigas, mas quando a mata crescer, haverão muitas folhas disponíveis para elas, porém no começo, quando as mudas são muito pequenas elas podem fazer um enorme estrago. A MEC-Plant, além de diversos outros produtos, fabrica um porta iscas excelente, que basta ser colocado bem na trilha das formigas com as iscas dentro e elas fazem o resto.`,
     'content10': `Com o passar do tempo, as pessoas escolhem e trabalham com as ferramentas que funcionam melhor para cada aplicação, e com as quais se adaptam melhor. `,
-    'url': ` https://mecplant.com.br/produto/porta-iscas/`
+    'url': ` https://mecplant.com.br/produto/porta-iscas/`,
+
+    'hats': 'Botas De Borracha Brancas (Para O Verão), Chapéu De Palha Com Abas Largas, E Luvas De Couro São O Básico Para Um Dia De Trabalho No Campo. Lembrando Que O Operador Da Roçadeira Também Deve Usar Óculos De Proteção, Caneleiras, Botas De Couro, E Proteção De Ouvido.',
+    'saws': 'Durante O Período De Manutenção Após O Plantio, Ferramentas De Corte Podem Ser Importantes Para Remover Parasitas Das Mudas, Lembrando Que Não É Necessário Fazer Nenhum Tipo De Poda, Caso Não Hajam Parasitas Como A Erva-De-Passarinho Por Exemplo. Do Alto, Um Podão De Haste Para Alcançar Pontos Mais Altos, Uma Serra De Haste E Uma Serra De Mão, Uma Tesoura De Poda (Ou Podão), E Um Facão.'
 
    
   };

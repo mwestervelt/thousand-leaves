@@ -12,8 +12,9 @@ import kikkerland from './kikkerland';
 import people from './people'
 import tools from './tools'
 import trees from './trees'
+import saplings from './saplings'
 
 
-const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest, kikkerland, people, tools, trees };
+const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest, kikkerland, people, tools, trees, saplings };
 
 export default flatten(messages);

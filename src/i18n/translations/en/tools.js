@@ -12,7 +12,10 @@ export default {
     'content7': `Clothing is each person's choice, but in our project, the footwear for the summer are white rubber boots, because in the hot sun they heat up our feet a lot less than black boots. A very large straw hat protects the head, shoulders and neck, and red cotton t-shirts help for easy viewing in the midst of plants so it is easier to locate each other, and long comfortable cargo pants with many pockets work very well.`,
     'content8': `Other important tools are the ones used for combatting fires. Contact the IEF (Instituto Estadual de Florestas) in your area to learn how to train a forest fire brigade, but essentially the two important tools are a fire beater made from a rubber plaque attached to a long handle, and a rakehoe which is a rake with a hoe blade on the opposite side (2 in 1) used to remove dry leaves and twigs from the path of the fire while another person beats down the flames. Research.`,
     'content9': `The ant bait box is another important tool, especially in the Southern hemisphere spring months (Sept. Oct. Nov.) during the first plantings, because a single colony of leaf-cutting ants can ruin the planting of 3,000 seedlings in just one week. We pity the ants, but when the trees grow, there will be plenty of leaves available for them, however in the beginning, when the saplings are very small, ants can do a lot of damage. MEC-Plant, in addition to many other products, manufactures an excellent bait holder, which just needs to be placed right on the ants' trail with the bait inside and they do the rest.`,
-    'content10': `Over time, each person chooses the tools that work best for themselves, and better adapts to their personal working methods.`
-   
+    'content10': `Over time, each person chooses the tools that work best for themselves, and better adapts to their personal working methods.`,
+    'hats': 'White Rubber Boots (For The Summer), Wide Brimmed Straw Hats, And Leather Gloves Are The Basics For A Day Working In The Field. Reminding That The Brush Cutter Operator Should Also Wear Goggles, Shin Guards, Leather Boots, And Ear Plugs Or Muffs.',
+    'saws': 'During The Maintenance Period, After The Planting Is Done, Cutting Tools Can Be Important In The Removal Of Parasites From The Saplings. Keeping In Mind That There Is No Need To Prune Any Trees, Unless There Are Parasites, Such As The Erva-De-Passarinho. From The Top, A Long Reach Stem Tree Pruner For High To Reach Points, A Long Reach Saw, A Hand Saw, Pruning Shears, And A Machete.'
+    
+
   };
   

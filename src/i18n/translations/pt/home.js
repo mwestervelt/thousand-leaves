@@ -13,7 +13,8 @@ export default {
     'peoplelink': 'Gente',
     'toolslink': 'Ferramentas',
     'manuallink': 'Manual',
-    'treeslink': 'Arvores Plantadas'
+    'treeslink': 'Arvores Plantadas',
+    'saplingslink': 'Mudas'
 
 
   };

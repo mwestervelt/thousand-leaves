@@ -49,9 +49,11 @@ const ToolsPage = () => {
       <Row className="row">
           <Col className="col-7">
             <Img sizes={{...data.tools1.childImageSharp.fluid}} />
+            <small class="form-text text-muted"> <FormattedMessage id="tools.hats" /></small>
           </Col>
           <Col >
             <Img sizes={{...data.tools2.childImageSharp.fluid}}  />
+            <small class="form-text text-muted"> <FormattedMessage id="tools.saws" /></small>
           </Col>
         </Row>
         <br></br>
@@ -92,6 +94,7 @@ const ToolsPage = () => {
 
         {/* put photo Gallery here */}
         <Gallery
+            customProps
             itemsPerRow={[1,2]} 
             images={data.allFile.edges.map(({ node }) => ({
               ...node.childImageSharp.fluid

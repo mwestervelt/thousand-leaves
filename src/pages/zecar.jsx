@@ -18,6 +18,8 @@ const ZecarPage = ({ data }) => {
       <br></br>
       <Container>
           <Img key={zec2.src} fluid={zec2} />
+          <small class="form-text text-muted"> <FormattedMessage id="zecar.zecar1" /></small>
+
           <br></br>
         <h2>
           <strong>
@@ -31,6 +33,8 @@ const ZecarPage = ({ data }) => {
           <FormattedMessage id="zecar.content2" />
         </p>
         <Img key={zec1.src} fluid={zec1} />
+        <small class="form-text text-muted"> <FormattedMessage id="zecar.zecar2" /></small>
+
         <br></br>
         <p>
           <FormattedMessage id="zecar.content3" />
@@ -39,6 +43,8 @@ const ZecarPage = ({ data }) => {
           <FormattedMessage id="zecar.content4" />
         </p>
         <Img key={zec3.src} fluid={zec3} />
+        <small class="form-text text-muted"> <FormattedMessage id="zecar.zecar3" /></small>
+
         <br></br>
       </Container>
       <Container className="text-center my-5" >

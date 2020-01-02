@@ -50,6 +50,7 @@ const PeoplePage = ({ data }) => {
       <br></br>
       <Container>
         <Img fluid={{ ...data.kids.childImageSharp.fluid, aspectRatio: 1.77 }} />
+        <small class="form-text text-muted"> <FormattedMessage id="people.kids" /></small>
         <br></br>
         <h2><strong>
           <FormattedMessage id="people.placeholder" />
@@ -104,6 +105,7 @@ const PeoplePage = ({ data }) => {
 
         render= {data => (
           <Gallery
+          localeKey={customProps.localeKey}
             itemsPerRow={[1,2]} 
             images={data.allFile.edges.map(({ node }) => ({
               ...node.childImageSharp.fluid
