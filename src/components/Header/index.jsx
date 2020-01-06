@@ -80,7 +80,7 @@ const Header = ({ hideLangs }) => {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <Link to='/contact' className='nav-link'><FormattedMessage id="home.contactlink" /></Link>
+                <a href='https://kikkerland.com/pages/contact-us-2019' target="_blank" className='nav-link'><FormattedMessage id="home.contactlink" /></a>
               </NavItem>
             </Nav>
             <span className="ml-auto langs">

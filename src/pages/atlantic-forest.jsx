@@ -68,6 +68,7 @@ const ForestPage = () => {
       <Row className="row no-gutters">
           <Col>
             <Img fluid={data.image1.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="atlForest.caption1" /></small>
           </Col>
         </Row>
         <br></br>
@@ -80,6 +81,7 @@ const ForestPage = () => {
         <Row className="row no-gutters">
           <Col>
             <Img fluid={data.image2.childImageSharp.fluid}  />
+            <small class="form-text text-muted"> <FormattedMessage id="atlForest.caption2" /></small>
           </Col>
         </Row>
         <br></br>
@@ -92,6 +94,7 @@ const ForestPage = () => {
         <Row className="row no-gutters">
           <Col>
             <Img fluid={data.pond.childImageSharp.fluid} />
+            <small class="form-text text-muted"> <FormattedMessage id="atlForest.caption3" /></small>
           </Col>
         </Row>
         <br></br>

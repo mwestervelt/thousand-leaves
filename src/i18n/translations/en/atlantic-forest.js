@@ -11,6 +11,9 @@ export default {
     'content4': `The Atlantic Forest has the largest variety of trees per square kilometer of all rainforests in the world, over 700 different species and sub species altogether, it houses over 20,000 plant species, 40 percent of which are endemic. Over 4,200 species of vertebrates, of which 6,300 species of reptiles have been catalogued, 9,000 species of birds, and more than 4,000 mammal species have been identified, and the number of species of invertebrates surpasses 990,000.`,
 
     'content5': `Beginning with sugarcane plantations in the 18th century, and later coffee plantations, this enormous forest has been losing habitat for hundreds of years. Now, with the increased expansion of urban areas throughout its whole extention, the Atlantic Forest is facing severe pressure from the issues tied to urbanization. `,
+    'caption1': `The Tallest Waterfall In The São Francisco River, The Casca D'anta, At The Serra Da Canastra National Park In Minas Gerais.`,
+    'caption2': `View Of Facão Mountain (Alt. 1.214 M / 4,000 Ft.),  With The Atlantic Forest Climbing Its Steep Walls.`,
+    'caption3': `Waterfall In Aiuruoca, Minas Gerais.`,
 
     
   

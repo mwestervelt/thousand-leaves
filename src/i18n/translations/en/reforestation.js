@@ -33,18 +33,8 @@ export default {
 
     'content16': `The Atlantic Forest has the largest variety of tree species of any forest in the world, including the Amazon.Tree variety that is, not plants in general.Native Atlantic Forest seeds or saplings can be purchased at relatively low prices from plant nurseries or universities where there is an agronomy or forestry engineering curriculum, and can be found by searching the internet.Below is the list of native tree species planted in the Projeto Mil Folhas(Thousand Leaves Project) over the past twenty two years.The item Page is for the identification of the many native tree species of the Atlantic Forest in the book BRAZILIAN TREES Vol. 1 and 2(H.Lorenzi / Plantarum http://www.plantarum.com.br) which is a great learning tool and the best manual for visualizing, and recognizing different species by their general form, bark, leaves, flowers, and fruit, as well as other essential characteristics. However, according to the late Prof. Paulo Kageyama, the greatest expert in the Atlantic Forest in Brazil, the Secondary Succession data in this book is somewhat lacking in precision. `,
 
-    'content17': `LIST OF MOST TREES PLANTED ON THE PROJETO MIL FOLHAS:`,
-    'content18': `(Page refers to the book Árvores Brasileiras H. Lorenzi / Plantarum: http://www.plantarum.com.br)`,
-
-    'content19': `tables go here`,
-
-
-
-
-
-
-
-
+    'content17': `LIST OF MOST TREES PLANTED ON THE PROJETO MIL FOLHAS`,
+   
 
     'content20': `SAPLING PRODUCTION AND SEEDBED:`,
 
@@ -153,10 +143,10 @@ export default {
 `THE PLANTING:`,
 
  'content60': 
-`Sometimes the hardest step is taking the seedlings from the nurseries to the planting area.Therefore, it is important that the seedlings are not very large, with only a year or less, and between 25 cm(9" to 10) and 50 cm (19 to 20") maximum in height.Dig out a small clump - sized hole, close to the same volume as the soil clods, into the soil / compost / fertilizer combination inside the hole, and carefully remove the seedlings from the bags, depositing the clump into the pit, and tightening the soil around the root clump gently but firmly, always keeping the plant stem straight.Avoid burying the seedling stem, i.e.do not bury the root of the plant too deep in the pit with the first 3 to 5 cm of the seedling stem.Preferably leave the soil at the mouth of the slightly convex, the so - called catchment bowl, which helps in the absorption of rainwater.On steep slopes, the pit mouth should be as horizontal and level as possible, so that it can absorb rainwater more efficiently.`,
+`Sometimes the hardest step is taking the seedlings from the nurseries to the planting area. Therefore, it is important that the seedlings are not very large, with only a year or less, and between 25 cm (9" to 10) and 50 cm (19 to 20") maximum in height. Dig out a small clump-sized hole, close to the same volume as the soil clods, into the soil / compost / fertilizer combination inside the hole, and carefully remove the seedlings from the bags, depositing the clump into the pit, and tightening the soil around the root clump gently but firmly, always keeping the plant stem straight. Avoid burying the seedling stem, i.e. do not bury the root of the plant too deep in the pit with the first 3 to 5 cm of the seedling stem. Preferably leave the soil at the mouth of the hole slightly concave, the so-called catchment bowl, which helps in the absorption of rainwater. On steep slopes, the pit mouth should be as horizontal and level as possible, so that it can absorb rainwater more efficiently.`,
 
  'content61': 
-`Identify the Primary, the Early Secondary, and plant them interspersed between the Late Secondary so they can shade them better as they grow.It is important to spread the Leguminosae evenly, so that they can benefit non - Leguminosae with their nitrogen - fixing power to the soil.As for Climax, they should be planted only when there is a full shading condition, with the soil somewhat improved, a few years after the first planting.So don't worry too much about the Climaxes, invest in the Primary, Early Secondary and Secondary with plenty of Leguminosae, and aim to establish a shading condition as soon as possible. The Climax species are a luxury at the end of the process.`,
+`Identify the Primary, the Early Secondary, and plant them interspersed between the Late Secondary so they can shade them better as they grow. It is important to spread the Leguminosae evenly, so that they can benefit non-Leguminosae with their nitrogen-fixing power to the soil. As for Climax, they should be planted only when there is a full shading condition, with the soil somewhat improved, a few years after the first planting. So don't worry too much about the Climaxes, invest in the Primary, Early Secondary and Secondary with plenty of Leguminosae, and aim to establish a shading condition as soon as possible. The Climax species are a luxury at the end of the process.`,
 
  'content62': 
 `If you are in the Southeast(of Brazil), organize the planting for the rainy summer months(from September to March), and choose cool, cloudy days to plant, preferably rainy days or when you know it will rain very soon after(before a cold front arrives, for instance), which helps very much in the survival of the seedlings.Stay tuned to the weather http://weather.com/weather/local/BRXX0201 or http://www.bbc.co.uk/weather/3451190 During the first days after planting, if there is no rain, and the weather is dry, watering is of the utmost importance and should not be ignored. It is important that the seedlings get watered frequently during this early stage, preferably by rain, but if there is an unexpected drought, they can be watered with a water pump or watering can. In any case, the youngest saplings should be watered at least once or twice a week for the first twenty days after planting, in case it does not rain. A good technique is to get some large, 200 or 400 liter (50 to 100 gallon) steel drums (with no holes...and not the musical type), scattered around the area, and fill them up with water from a pump (the project owns an excellent and reliable Stihl P835 gasoline pump), then use a hand watering can, or bucket to water each one of the newly planted seedlings. This is perhaps the most labor intensive aspect of the entire process, but it guarantees the success of the project. Keep in mind that many reforestation projects have failed from lack of maintenance, so, be thorough. `,

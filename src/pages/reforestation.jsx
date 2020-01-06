@@ -14,7 +14,7 @@ const ReforestPage = () => (
         <Container>
             <h2 className="text-center"><strong>
                 <FormattedMessage id="reforest.placeholder" />
-                </strong>
+            </strong>
             </h2>
             <p>
                 <FormattedMessage id="reforest.content1" />
@@ -65,13 +65,9 @@ const ReforestPage = () => (
                 <FormattedMessage id="reforest.content16" />
             </p>
             <p>
-                <FormattedMessage id="reforest.content17" />
-            </p>
-            <p>
-                <FormattedMessage id="reforest.content18" />
-            </p>
-            <p>
-                <FormattedMessage id="reforest.content19" />
+                <strong>
+                    <Link to='/trees' className='nav-link'><FormattedMessage id="reforest.content17" /></Link>
+                </strong>
             </p>
             <p>
                 <FormattedMessage id="reforest.content20" />
@@ -132,9 +128,6 @@ const ReforestPage = () => (
             </p>
             <p>
                 <FormattedMessage id="reforest.content39" />
-            </p>
-            <p>
-                <FormattedMessage id="reforest.content40" />
             </p>
             <p>
                 <FormattedMessage id="reforest.content41" />
@@ -243,9 +236,6 @@ const ReforestPage = () => (
             </p>
             <p>
                 <FormattedMessage id="reforest.content74" />
-            </p>
-            <p>
-                <FormattedMessage id="reforest.content75" />
             </p>
             <p>
                 <FormattedMessage id="reforest.content76" />

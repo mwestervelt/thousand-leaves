@@ -12,7 +12,12 @@ export default {
 
     'content5': `Começando com as plantações de cana de açúcar no século 18, e, logo em seguida com o plantio de café, essa floresta enorme tem perdido habitat durante centenas de anos. Hoje com a expansão de áreas urbanas em toda a sua extensão, a Mata Atlântica sofre uma enorme presssão com a questão da urbanização.`,
 
-    
+    'caption1': `A Maior Cachoeira Do Rio São Francisco, A Casca D'anta, No Parque Nacional Da Serra Da Canastra, Em Minas Gerais`,
+    'caption2': `Vista Do Morro Do Facão (Alt. 1.214 M), Com A Mata Atlântica Subindo Por Suas Íngremes Encostas.`,
+    'caption3': `Cachoeira Em Aiuruoca, Minas Gerais.`,
+
+
+
   
     'Go to page 2': 'Go to page 2',
 };
