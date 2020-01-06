@@ -51,6 +51,8 @@ const ZecarPage = ({ data }) => {
         <Button  color="primary" size="lg">
           <a style={{ color: 'white', textDecoration: 'none' }} href="https://kikkerland.com/products/zecar-flywheel-car"  rel="noopener noreferrer" target="_blank"><FormattedMessage id="zecar.content5" /></a>
         </Button>
+        <footer className="my-5">
+        </footer>
       </Container>
 
       <StaticQuery

@@ -994,6 +994,8 @@ const TreesPage = () => {
                 <Link to="/">
                     <FormattedMessage id="page2.Go back to the homepage" />
                 </Link>
+                <footer className="my-5">
+        </footer>
             </Container>
 
 

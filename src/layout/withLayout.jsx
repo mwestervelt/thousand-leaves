@@ -47,10 +47,7 @@ const withLayout = customProps => PageComponent => props => {
               <main >
                 <PageComponent {...props} />
               </main>
-              <footer className="my-5">
-                <br></br><br></br>
-    
-              </footer>
+              
             
           </PageContext.Provider>
           </div>
