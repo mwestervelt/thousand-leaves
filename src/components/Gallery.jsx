@@ -39,7 +39,7 @@ const Gallery = ({ intl, images, itemsPerRow: itemsPerRowByBreakpoints }) => {
                  
                     <Img
                         key={image.originalName}
-                        fluid={image} 
+                        sizes={image} 
                         alt={image.originalName}
                         imgStyle={{ objectFit: 'cover' }}
                     />   
