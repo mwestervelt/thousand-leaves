@@ -15,6 +15,12 @@ export default {
     'caption1': `A Maior Cachoeira Do Rio São Francisco, A Casca D'anta, No Parque Nacional Da Serra Da Canastra, Em Minas Gerais`,
     'caption2': `Vista Do Morro Do Facão (Alt. 1.214 M), Com A Mata Atlântica Subindo Por Suas Íngremes Encostas.`,
     'caption3': `Cachoeira Em Aiuruoca, Minas Gerais.`,
+    'redflower': `Endêmica Da Região Do Projeto Mil Folhas, Uma Bilbergia Pyramidalis Em Flor.`,
+    'orchid': `Grupo De Pequenas Orquídeas De Sol Endêmicas Da Mata Atlântica De Altitude No Vale Florido.`,
+    'panera': `Uma Enorme Subespécie De Paineira Rosa (Chorisia Speciosa), Com Mais De 50 M De Altura, E Uma Copa Com Pelo Menos 25 M De Diâmetro, Nativa Da Mata Atlântica De Altitude No Vale Florido. `,
+    'redflower2':`Flor Endêmica Da Mata Atlântica De Altitude, Possívelmente Nunca Catalogada, Encontrada Na Encosta Do Morro Do Facão Na Altitude De Aproximadamente 1.000 M`,
+    'mata1': `Fotografia Tirada Da Encosta Do Morro Do Facão, À Esquerda Do Projeto Mil Folhas, Mostrando A Mata Nativa Da Região Do Vale Florido, No Municípo De Petrópolis, Rio De Janeiro. `,
+    'mata4': `Detalhe Da Mata Nativa Da Região Do Vale Florido, Imediatamente Acima Do Projeto Mil Folhas, E De Onde Frutos E Cementes Descem Da Encosta Do Morro Da Capetinga Em Dias De Chuva, E Germinam No Projeto Mil Folhas Agora Que Existe Uma Cobertura Florestal Viabilizando Esse Processo, E Incorporando O Projeto A Mata Nativa Da Região. `,
 
 
 

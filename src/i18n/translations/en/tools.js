@@ -14,7 +14,29 @@ export default {
     'content9': `The ant bait box is another important tool, especially in the Southern hemisphere spring months (Sept. Oct. Nov.) during the first plantings, because a single colony of leaf-cutting ants can ruin the planting of 3,000 seedlings in just one week. We pity the ants, but when the trees grow, there will be plenty of leaves available for them, however in the beginning, when the saplings are very small, ants can do a lot of damage. MEC-Plant, in addition to many other products, manufactures an excellent bait holder, which just needs to be placed right on the ants' trail with the bait inside and they do the rest.`,
     'content10': `Over time, each person chooses the tools that work best for themselves, and better adapts to their personal working methods.`,
     'hats': 'White Rubber Boots (For The Summer), Wide Brimmed Straw Hats, And Leather Gloves Are The Basics For A Day Working In The Field. Reminding That The Brush Cutter Operator Should Also Wear Goggles, Shin Guards, Leather Boots, And Ear Plugs Or Muffs.',
-    'saws': 'During The Maintenance Period, After The Planting Is Done, Cutting Tools Can Be Important In The Removal Of Parasites From The Saplings. Keeping In Mind That There Is No Need To Prune Any Trees, Unless There Are Parasites, Such As The Erva-De-Passarinho. From The Top, A Long Reach Stem Tree Pruner For High To Reach Points, A Long Reach Saw, A Hand Saw, Pruning Shears, And A Machete.'
+    'saws': 'During The Maintenance Period, After The Planting Is Done, Cutting Tools Can Be Important In The Removal Of Parasites From The Saplings. Keeping In Mind That There Is No Need To Prune Any Trees, Unless There Are Parasites, Such As The Erva-De-Passarinho. From The Top, A Long Reach Stem Tree Pruner For High To Reach Points, A Long Reach Saw, A Hand Saw, Pruning Shears, And A Machete.',
+    'hand': `The Human Hand Is The Most Eficient, Most Used, And Always Available Tool For A Reforestation Project.`,
+  'rocado': `These Are Most Of The Tools We Use For Mowing The Tall Grass. From The Top, A Garden Broom, Two Types Of Scythes, And A Gasoline Powered Brush Cutter. These Tools Are Fundamental To Start The Whole Process.`,
+  'cavando': `There Are Several Tools Available For Digging And Opening Tree Holes, Each One Has A Specific Funcion, And Depend On Taste And Adaptaton For Each Person To Perform A Specific Job. From The Top, Two Types Of Pickaxes, Very Helpful On Hard Compacted Soil, A Narrow Spade (The Favorite For Many People), An Articulated Digger (That Can Clog Up If The Soil Is Very Wet), A Narrow Hoe (Very Popular), And A Auger Which Requires A Lot Of Physical Preparation. And, As A Reminder, These Tools Work Better When Their Blades Are Sharpened.`,
+  'movendo': `These Tools Are Often Used In Conjunction With The Digging Tools And Can Be Used To That End As Well. But, Mainly, They Are Used To Move Soil, Stones, Root Fragments, And Rubble In General. From The Top, A Flat Shovel, Ideal For Moving Soil And Rubble, A Pointed Shovel, That Is Very Useful, Also, For Digging, And Two Broad Hoes Set Up In Different Angles. These Tools Are Also Used For Mixing Up Large Quantities Of Compost Or Fertilizers. And, As A Reminder, These Tools Work Better When Their Blades Are Sharpened.`,
+
+  'pump': `A High Pressure Water Pump, And Many Feet Of High Pressure Hoses, Is A Very Important Tool For When The Planting Is Done In Days That Have No Rain.`,
+  'file': `A Single Cut Flat File About 150 To 200 Mm(6 To 8") Long Is Essential To Keep The Tools Sharpened, Be It A Hoe, A Digger, A Shovel, Or An Auger.`, 
+  'greaser': `The Brush Cutter Should Be Well Maintained, Lubricated, And Greased.A Good Quality Greaser And Grease Are Important To Keep The Brush Cutter  In Good Working Order.`,
+  'swiss': `A Basic Swiss Army Knife Is Essential.`, 
+  'abafador': `A Fire Beater Made With A Rubber Plated Mat And A Long Handle Can Be Either Purchased Or Made At Home, Keeping In Mind This Is The Tool Where Weight And Ergonomics Are Most Important, Because No One Wants To Tire Out In The Middle Of Combating A Fire.There Is No Need For An Oversize And Overweight Tool, Because The Combatting Activity Is Extremely Strenuous And Tiresome.`, 
+  'rakehoe': `A Rakehoe Is A Tool That Is Not Sold In Brazil, But Can Be Adapted.It Is Essential, Together With The Fire Beater, To Remove Dry Leaves, And Twigs Out Of The Way Of The Fire While Another Person Uses The Fire Beater.`,
+  'mec1':
+    
+    `The Bait Holder By Mec - Plant Works Perfectly To Eliminate Leaf - Cutting Ants From The Planting Area, Keeping The Bait Always Dry.Just Place It In The Path Of The Ants, That Climb A Small Ramp And Take The Bait Leaving From Another Ramp.`,
+
+ 'mec2':
+    
+    `The Bait Holder By Mec - Plant Works Perfectly To Eliminate Leaf - Cutting Ants From The Planting Area, Keeping The Bait Always Dry.Just Place It In The Path Of The Ants, That Climb A Small Ramp And Take The Bait Leaving From Another Ramp.`,
+
+  'mec3':
+    
+    `The Bait Holder By Mec - Plant Works Perfectly To Eliminate Leaf - Cutting Ants From The Planting Area, Keeping The Bait Always Dry.Just Place It In The Path Of The Ants, That Climb A Small Ramp And Take The Bait Leaving From Another Ramp.`,
     
 
   };

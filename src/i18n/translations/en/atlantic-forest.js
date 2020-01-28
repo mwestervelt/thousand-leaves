@@ -14,6 +14,12 @@ export default {
     'caption1': `The Tallest Waterfall In The São Francisco River, The Casca D'anta, At The Serra Da Canastra National Park In Minas Gerais.`,
     'caption2': `View Of Facão Mountain (Alt. 1.214 M / 4,000 Ft.),  With The Atlantic Forest Climbing Its Steep Walls.`,
     'caption3': `Waterfall In Aiuruoca, Minas Gerais.`,
+    'redflower': `Endemic From The Mil Folhas Project Region, A Bilbergia Pyramidalis Flower.`,
+    'orchid': `Group Of Small Sun Orchyds Endemic Of The Atlantic Forest Of Altitude In The Vale Florido.`,
+    'panera': `An Enormous Subspecies Of Paineira Rosa (Chorisia Speciosa), More Than 50 M / 160 Ft. Tall, With A Canope With At Least 25 M / 80 Ft. Diameter, Native Of The Atlantic Forest Of Altitude In The Vale Florido. `,
+    'redflower2':`Flower Endemic Of The Atlantic Forest Of Altitude, Possibly Never Catalogued, Found On The Slope Of Facão Mountain At Approximately 1,000 M / 3,300 Ft. Of Altitude.`,
+    'mata1': `Photograph Made From A Slope On The Facão Mountain, To The Left Of The Mil Folhas Project, Showing The Vale Florido Native Forest, In The Municipaliy Of Petrópolis, Rio De Janeiro. `,
+    'mata4': `Detail Of The Native Forest In The Region Of Vale Florido, Immediately Above The Mil Folhas Project, From Where Fruit And Seeds Roll Down The Capetinga Mountain On Rainy Days, And Germinate In The Mil Folhas Project, Now That There Is A Forest Cover Making This Process Viable, Incorporating The Project To The Native Forest. `,
 
     
   
