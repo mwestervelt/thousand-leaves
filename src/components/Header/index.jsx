@@ -45,6 +45,9 @@ const Header = ({ hideLangs }) => {
                   <DropdownItem>
                     <Link to='/trees' className='nav-link'><FormattedMessage id="home.treeslink" /></Link>
                   </DropdownItem>
+                  <DropdownItem>
+                    <Link to='/photos' className='nav-link'><FormattedMessage id="home.photoslink" /></Link>
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav inNavbar>

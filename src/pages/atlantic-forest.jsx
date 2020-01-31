@@ -111,67 +111,63 @@ const ForestPage = () => {
         <p>
           <FormattedMessage id="atlForest.content5" />
         </p>
-
-        <Container fluid>
         <Row>
-            <div class="py-4 col-lg-6">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.redflower.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="atlForest.redflower" />
-                </div>
+          <div class="py-4 col-lg-6">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.redflower.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="atlForest.redflower" />
               </div>
             </div>
-            <div class="py-4 col-lg-6">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.flower.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="atlForest.panera" />
-                </div>
+          </div>
+          <div class="py-4 col-lg-6">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.flower.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="atlForest.panera" />
               </div>
             </div>
-          </Row>
-          <Row>
-            <div class="py-4 col-lg-5">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.redflower2.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="atlForest.redflower2" />
-                </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col-lg-5">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.redflower2.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="atlForest.redflower2" />
               </div>
             </div>
-            <div class="py-4 col-lg-7">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.orchid.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="atlForest.orchid" />
-                </div>
+          </div>
+          <div class="py-4 col-lg-7">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.orchid.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="atlForest.orchid" />
               </div>
             </div>
-          </Row>
-          <Row>
-            <div class="py-4 col d-flex">
-              <div class="card flex-fill border-0 h-100">
-                <Img sizes={{ ...data.mata1.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="atlForest.mata1" />
-                </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col d-flex">
+            <div class="card flex-fill border-0 h-100">
+              <Img sizes={{ ...data.mata1.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="atlForest.mata1" />
               </div>
             </div>
-          </Row>
-          <Row>
-            <div class="py-4 col d-flex">
-              <div class="card flex-fill border-0 h-100">
-                <Img sizes={{ ...data.mata4.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="atlForest.mata4" />
-                </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col d-flex">
+            <div class="card flex-fill border-0 h-100">
+              <Img sizes={{ ...data.mata4.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="atlForest.mata4" />
               </div>
             </div>
-          </Row>
-        </Container>
+          </div>
+        </Row>
         <br></br>
-
 
         <Link to="/">
           <FormattedMessage id="page2.Go back to the homepage" />

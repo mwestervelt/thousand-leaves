@@ -130,160 +130,149 @@ const ToolsPage = () => {
           <FormattedMessage id="tools.content10" />
         </p>
 
-        <Container fluid>
-          <Row>
-            <div class="col d-flex">
-              <div class="card flex-fill border-0 h-100">
-                <Img sizes={{ ...data.hand.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.hand" />
-                </div>
+        <Row>
+          <div class="col d-flex">
+            <div class="card flex-fill border-0 h-100">
+              <Img sizes={{ ...data.hand.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.hand" />
               </div>
             </div>
-          </Row>
-          <Row>
-              <div class="py-4 col-lg-6">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.cavando.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.cavando" />
-                </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col-lg-6">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.cavando.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.cavando" />
               </div>
-
             </div>
-            <div class="py-4 col-lg-6">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.movendo.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.movendo" />
-                </div>
+          </div>
+          <div class="py-4 col-lg-6">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.movendo.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.movendo" />
               </div>
-
             </div>
-          </Row>
-          <Row>
+          </div>
+        </Row>
+        <Row>
           <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.rocado.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.rocado" />
-                </div>
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.rocado.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.rocado" />
               </div>
-              </div>
-              <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.tools2.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.saws" />
-                </div>
-              </div>
-
             </div>
-          </Row>
-          <Row>
+          </div>
           <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.tools1.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.hats" />
-                </div>
-              </div>
-              </div>
-          </Row>
-          <Row>
-            <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.pump1.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.pump" />
-                </div>
-              </div>
-              </div>
-              <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.pump2.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.pump" />
-                </div>
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.tools2.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.saws" />
               </div>
             </div>
-          </Row>
-          <Row>
-            <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.file.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.file" />
-                </div>
-              </div>
-              </div>
-              <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.greaser.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.greaser" />
-                </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.tools1.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.hats" />
               </div>
             </div>
-          </Row>
-          <Row>
-            <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.swiss.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.swiss" />
-                </div>
-              </div>
-              </div>
-              <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.abafador.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.abafador" />
-                </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.pump1.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.pump" />
               </div>
             </div>
-            <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.rake.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.rakehoe" />
-                </div>
+          </div>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.pump2.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.pump" />
               </div>
             </div>
-          </Row>
-          <Row>
-            <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.mec1.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.mec1" />
-                </div>
-              </div>
-              </div>
-              <div class="py-4 col-lg">
-              <div class="card h-100 border-0">
-                <Img sizes={{ ...data.mec2.childImageSharp.fluid }} className="card-img-top" />
-                <div class="card-footer">
-                  <FormattedMessage id="tools.mec2" />
-                </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.file.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.file" />
               </div>
             </div>
-          </Row>
-        </Container>
-
+          </div>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.greaser.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.greaser" />
+              </div>
+            </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.swiss.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.swiss" />
+              </div>
+            </div>
+          </div>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.abafador.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.abafador" />
+              </div>
+            </div>
+          </div>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.rake.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.rakehoe" />
+              </div>
+            </div>
+          </div>
+        </Row>
+        <Row>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.mec1.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.mec1" />
+              </div>
+            </div>
+          </div>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img sizes={{ ...data.mec2.childImageSharp.fluid }} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="tools.mec2" />
+              </div>
+            </div>
+          </div>
+        </Row>
         <br></br>
-
-
         <Link to="/">
           <FormattedMessage id="page2.Go back to the homepage" />
         </Link>
         <footer className="my-5">
         </footer>
       </Container>
-
-
-
 
     </>
   )

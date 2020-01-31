@@ -15,6 +15,7 @@ export default {
   'toolslink': 'Tools',
   'manuallink': 'Manual',
   'treeslink': 'Trees Planted',
-  'saplingslink': 'Saplings'
+  'saplingslink': 'Saplings',
+  'photoslink': 'Photos',
 
 };

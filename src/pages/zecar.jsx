@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Container, Button } from 'reactstrap'
+import { Container, Button, Row } from 'reactstrap'
 import withLayout from '../layout';
 // import Image from "../components/Image"
 import { StaticQuery, graphql } from 'gatsby';
@@ -17,10 +17,10 @@ const ZecarPage = ({ data }) => {
     <>
       <br></br>
       <Container>
-          <Img key={zec2.src} fluid={zec2} />
-          <small class="form-text text-muted"> <FormattedMessage id="zecar.zecar1" /></small>
+        <Img key={zec2.src} fluid={zec2} />
+        <small class="form-text text-muted"> <FormattedMessage id="zecar.zecar1" /></small>
 
-          <br></br>
+        <br></br>
         <h2>
           <strong>
             <FormattedMessage id="zecar.placeholder" />
@@ -32,9 +32,16 @@ const ZecarPage = ({ data }) => {
         <p>
           <FormattedMessage id="zecar.content2" />
         </p>
-        <Img key={zec1.src} fluid={zec1} />
-        <small class="form-text text-muted"> <FormattedMessage id="zecar.zecar2" /></small>
-
+        <Row>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img key={zec1.src} fluid={zec1} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="zecar.zecar2" />
+              </div>
+            </div>
+          </div>
+        </Row>
         <br></br>
         <p>
           <FormattedMessage id="zecar.content3" />
@@ -42,14 +49,21 @@ const ZecarPage = ({ data }) => {
         <p>
           <FormattedMessage id="zecar.content4" />
         </p>
-        <Img key={zec3.src} fluid={zec3} />
-        <small class="form-text text-muted"> <FormattedMessage id="zecar.zecar3" /></small>
-
+        <Row>
+          <div class="py-4 col-lg">
+            <div class="card h-100 border-0">
+              <Img key={zec3.src} fluid={zec3} className="card-img-top" />
+              <div class="card-footer">
+                <FormattedMessage id="zecar.zecar3" />
+              </div>
+            </div>
+          </div>
+        </Row>
         <br></br>
       </Container>
       <Container className="text-center my-5" >
-        <Button  color="primary" size="lg">
-          <a style={{ color: 'white', textDecoration: 'none' }} href="https://kikkerland.com/products/zecar-flywheel-car"  rel="noopener noreferrer" target="_blank"><FormattedMessage id="zecar.content5" /></a>
+        <Button color="primary" size="lg">
+          <a style={{ color: 'white', textDecoration: 'none' }} href="https://kikkerland.com/products/zecar-flywheel-car" rel="noopener noreferrer" target="_blank"><FormattedMessage id="zecar.content5" /></a>
         </Button>
         <footer className="my-5">
         </footer>

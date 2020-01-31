@@ -13,9 +13,10 @@ import people from './people'
 import tools from './tools'
 import trees from './trees'
 import saplings from './saplings'
+import photos from './photos'
 
 
-const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest, kikkerland, people, tools, trees, saplings};
+const messages = { error404, home, page2, project, atlForest, contact, zecar, reforest, kikkerland, people, tools, trees, saplings, photos };
 
 
 
