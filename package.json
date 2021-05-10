@@ -24,7 +24,7 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-sharp": "^2.1.15",
     "juxtaposejs": "^1.1.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "node-sass": "^4.13.0",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
